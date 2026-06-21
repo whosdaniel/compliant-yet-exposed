@@ -1,6 +1,6 @@
 # Compliant Yet Exposed: replication package
 
-This repository reproduces the experiments and figures in the paper **"Compliant Yet Exposed: A Passive Multi-Tenant Membership Side-Channel in DER Aggregation"** (Woowi Kim, 2026).
+This repository reproduces the experiments and data figures in the paper **"Compliant Yet Exposed: A Passive Multi-Tenant Membership Side-Channel in DER Aggregation"** (Woowi Kim, 2026).
 
 Preprint: SSRN link to be added.
 Preprint DOI: to be added once the SSRN version is posted (see "Citation" below).
@@ -17,9 +17,8 @@ pilot/                     experiments and their saved outputs
 figures/                   figure generators
   make_figures.py            the data figures (Figures 4, 5, 7, 8, 9, 10, 11)
   make_fig_defense_factorial.py   the defense factorial (Figure 6)
-  make_diagrams_svg.py       the three concept diagrams (Figures 1, 2, 3)
   figstyle.py                shared plot style
-  figs/                      the rendered figures (PNG)
+  figs/                      the rendered data figures (PNG)
 requirements.txt           Python dependencies
 Makefile                   shortcuts for the steps below
 LICENSE, CITATION.cff      license and citation metadata
@@ -30,7 +29,6 @@ LICENSE, CITATION.cff      license and citation metadata
 - Python 3.10 or newer (tested on 3.13).
 - The Python packages in `requirements.txt` (NumPy, SciPy, Matplotlib, lxml).
 - The `openssl` command line tool, needed only if you re-run the two loopback TLS scripts (`real_tls_measure.py`, `real_socket_capture.py`). They create a throwaway self-signed certificate in your temporary directory.
-- Chrome or Chromium, needed only if you regenerate the three concept diagrams (`make_diagrams_svg.py`). The rendered diagrams are already included, so this is optional. If your browser is in a non-standard location, set the `CHROME` environment variable to its full path.
 
 This package was tested on macOS and runs on Linux as well. On Windows, run the `python` commands shown below rather than `make` (which is not standard on Windows), and activate the virtual environment with `.venv\Scripts\activate` instead of `source .venv/bin/activate`. The two optional loopback TLS scripts need `openssl` available on the command line.
 
@@ -54,12 +52,6 @@ python make_fig_defense_factorial.py
 ```
 
 The figures are written to `figures/figs/`.
-
-To regenerate the three concept diagrams as well (needs Chrome or Chromium):
-
-```
-make diagrams
-```
 
 ## Full reproduction: re-run every experiment
 
@@ -88,7 +80,6 @@ Without `make`, run the scripts in `pilot/` (each writes its own JSON into `pilo
 | `pilot/real_tls_measure.py` | TLS-encrypted message sizes over loopback | Section 7 |
 | `pilot/real_socket_capture.py` | idle vs active traffic shape over loopback, plus the `.pcap` | Section 7 |
 | `pilot/pilot2p_hil.py` | per-DER command-emission loop (assumption A1) | Section 7 |
-| `figures/make_diagrams_svg.py` | threat model, three-layer isolation, mechanism | Figures 1, 2, 3 |
 
 ## What you can explore
 

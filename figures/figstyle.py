@@ -1,5 +1,5 @@
-"""figstyle.py — shared clean-minimal design system for the data figures (matches the SVG diagrams
-and the paper's Times body font). Import and call apply() at the top of a figure script."""
+"""figstyle.py: shared clean-minimal design system for the data figures (matches
+the paper's Times body font). Import and call apply() at the top of a figure script."""
 import matplotlib as mpl
 
 # achromatic / journal palette (no hue). Ordered shade ramp for grouped bars:

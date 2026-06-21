@@ -1,6 +1,6 @@
 PY ?= python
 
-.PHONY: install figures diagrams experiments all clean
+.PHONY: install figures experiments all clean
 
 install:
 	$(PY) -m pip install -r requirements.txt
@@ -8,10 +8,6 @@ install:
 # Fast path: regenerate the data figures from the saved results in pilot/results.
 figures:
 	cd figures && $(PY) make_figures.py && $(PY) make_fig_defense_factorial.py
-
-# Concept diagrams (Figures 1 to 3). Needs Chrome or Chromium; PNGs are already included.
-diagrams:
-	cd figures && $(PY) make_diagrams_svg.py
 
 # Full reproduction: re-run every experiment (regenerates pilot/results), then the figures.
 experiments:
