@@ -7,6 +7,16 @@ authors:
     given-names: Woowi
 license: MIT
 repository-code: "https://github.com/whosdaniel/compliant-yet-exposed"
+version: 1.0.0
+date-released: 2026-06-21
+doi: 10.5281/zenodo.20785008
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20785008
+    description: "Concept DOI (all versions; resolves to the latest)"
+  - type: doi
+    value: 10.5281/zenodo.20785009
+    description: "DOI for version 1.0.0"
 preferred-citation:
   type: article
   title: "Compliant Yet Exposed: A Passive Multi-Tenant Membership Side-Channel in DER Aggregation"
