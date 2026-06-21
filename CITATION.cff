@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper below."
+title: "Compliant Yet Exposed: replication package"
+type: software
+authors:
+  - family-names: Kim
+    given-names: Woowi
+license: MIT
+repository-code: "https://github.com/whosdaniel/compliant-yet-exposed"
+preferred-citation:
+  type: article
+  title: "Compliant Yet Exposed: A Passive Multi-Tenant Membership Side-Channel in DER Aggregation"
+  authors:
+    - family-names: Kim
+      given-names: Woowi
+  year: 2026
+  # SSRN preprint DOI, to be filled in once the preprint is posted:
+  # doi: 10.2139/ssrn.XXXXXXXX

@@ -1,0 +1,242 @@
+[
+  {
+    "cond": "headline K2 (corr0,g1,W24)",
+    "feature": "downlink",
+    "label": "downlink             headline K2 (corr0,g1,W24)",
+    "K": 2,
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "headline K2 (corr0,g1,W24)",
+    "feature": "uplink",
+    "label": "uplink               headline K2 (corr0,g1,W24)",
+    "K": 2,
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "headline K2 (corr0,g1,W24)",
+    "feature": "bidir",
+    "label": "bidir                headline K2 (corr0,g1,W24)",
+    "K": 2,
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "headline K2 (corr0,g1,W24)",
+    "feature": "downlink_count_only",
+    "label": "downlink_count_only  headline K2 (corr0,g1,W24)",
+    "K": 2,
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "headline K2 (corr0,g1,W24)",
+    "feature": "uplink_count_only",
+    "label": "uplink_count_only    headline K2 (corr0,g1,W24)",
+    "K": 2,
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "mild K5 (corr0.5,g0.75,W16)",
+    "feature": "downlink",
+    "label": "downlink             mild K5 (corr0.5,g0.75,W16)",
+    "K": 5,
+    "acc": [
+      0.6293,
+      0.1017
+    ],
+    "ari": [
+      0.3477,
+      0.1473
+    ],
+    "pairwise_f1": [
+      0.4682,
+      0.1194
+    ],
+    "null_acc_p975_mean": 0.4788,
+    "null_ari_p975_mean": 0.1029,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 0.94,
+    "frac_sig_ari_p05": 0.98
+  },
+  {
+    "cond": "mild K5 (corr0.5,g0.75,W16)",
+    "feature": "uplink",
+    "label": "uplink               mild K5 (corr0.5,g0.75,W16)",
+    "K": 5,
+    "acc": [
+      0.6353,
+      0.0937
+    ],
+    "ari": [
+      0.3607,
+      0.1279
+    ],
+    "pairwise_f1": [
+      0.4797,
+      0.1031
+    ],
+    "null_acc_p975_mean": 0.4781,
+    "null_ari_p975_mean": 0.103,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 0.94,
+    "frac_sig_ari_p05": 0.98
+  },
+  {
+    "cond": "mild K5 (corr0.5,g0.75,W16)",
+    "feature": "bidir",
+    "label": "bidir                mild K5 (corr0.5,g0.75,W16)",
+    "K": 5,
+    "acc": [
+      0.712,
+      0.1115
+    ],
+    "ari": [
+      0.4737,
+      0.1682
+    ],
+    "pairwise_f1": [
+      0.5714,
+      0.1353
+    ],
+    "null_acc_p975_mean": 0.4781,
+    "null_ari_p975_mean": 0.1084,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 0.98,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "mild K5 (corr0.5,g0.75,W16)",
+    "feature": "downlink_count_only",
+    "label": "downlink_count_only  mild K5 (corr0.5,g0.75,W16)",
+    "K": 5,
+    "acc": [
+      0.7973,
+      0.1105
+    ],
+    "ari": [
+      0.6036,
+      0.1709
+    ],
+    "pairwise_f1": [
+      0.6765,
+      0.1385
+    ],
+    "null_acc_p975_mean": 0.4782,
+    "null_ari_p975_mean": 0.1048,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "cond": "mild K5 (corr0.5,g0.75,W16)",
+    "feature": "uplink_count_only",
+    "label": "uplink_count_only    mild K5 (corr0.5,g0.75,W16)",
+    "K": 5,
+    "acc": [
+      0.786,
+      0.111
+    ],
+    "ari": [
+      0.5893,
+      0.1591
+    ],
+    "pairwise_f1": [
+      0.6648,
+      0.1289
+    ],
+    "null_acc_p975_mean": 0.4802,
+    "null_ari_p975_mean": 0.1048,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  }
+]

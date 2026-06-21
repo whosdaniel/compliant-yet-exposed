@@ -1,0 +1,89 @@
+{
+  "cipher": "TLS_AES_256_GCM_SHA384",
+  "n_DER_streams": 8,
+  "n_pools_set": 2,
+  "windows": 6,
+  "total_records": 240,
+  "distinct_source_ports": 8,
+  "per_der_window_command_counts": {
+    "0": [
+      10,
+      0,
+      10,
+      0,
+      10,
+      0
+    ],
+    "1": [
+      10,
+      0,
+      10,
+      0,
+      10,
+      0
+    ],
+    "2": [
+      0,
+      10,
+      0,
+      10,
+      0,
+      10
+    ],
+    "3": [
+      10,
+      0,
+      10,
+      0,
+      10,
+      0
+    ],
+    "4": [
+      0,
+      10,
+      0,
+      10,
+      0,
+      10
+    ],
+    "5": [
+      10,
+      0,
+      10,
+      0,
+      10,
+      0
+    ],
+    "6": [
+      0,
+      10,
+      0,
+      10,
+      0,
+      10
+    ],
+    "7": [
+      0,
+      10,
+      0,
+      10,
+      0,
+      10
+    ]
+  },
+  "realized_inter_record_s_median": 0.0245,
+  "tick_nominal_s": 4.0,
+  "tick_compressed_s": 0.02,
+  "wire_bytes_per_setpoint": 34,
+  "pools_set_by_us": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "scope": "A1 grounding only (real per-DER TLS command emission + cadence + per-flow separability). Co-membership NOT recovered here (set schedule -> tautology); stays Section 8 sim with A2/A3 argued."
+}

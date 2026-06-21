@@ -1,0 +1,36 @@
+{
+  "n_seeds": 50,
+  "chance": 0.5,
+  "temporal_shuffle": {
+    "real": {
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    "same_fraction": {
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    "window_shuffle": {
+      "acc": 0.575,
+      "sd": 0.055
+    }
+  },
+  "ablation": {
+    "both": {
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    "count_only": {
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    "size_only": {
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    "size_only_equalized": {
+      "acc": 0.592,
+      "sd": 0.072
+    }
+  }
+}

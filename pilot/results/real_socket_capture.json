@@ -1,0 +1,22 @@
+{
+  "cipher": "TLS_AES_256_GCM_SHA384",
+  "capture": "real loopback TLS via in-process relay (root-free); NOT kernel-sniffed, NOT third-party",
+  "idle_phase": {
+    "msgs": 3,
+    "wire_bytes": 210
+  },
+  "active_phase": {
+    "msgs": 26,
+    "wire_bytes": 5948
+  },
+  "captured_wire_chunks": 38,
+  "captured_bytes_c2s": 6755,
+  "captured_bytes_s2c": 2300,
+  "capture_span_s": 97.82,
+  "cadence_modeled": {
+    "setpoint_period_s": 4.0,
+    "idle_poll_period_s": 15.0,
+    "note": "cadence VALUES are spec-imposed (modeled); record sizes & wire timing are real"
+  },
+  "scope": "traffic-shape grounding only; co-membership/award structure NOT captured (stays Pilot-2 sim, \u00a78.4)"
+}

@@ -1,0 +1,6 @@
+# Python dependencies for the replication package.
+# Tested with Python 3.13; should work on Python 3.10 or newer.
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+lxml>=4.9

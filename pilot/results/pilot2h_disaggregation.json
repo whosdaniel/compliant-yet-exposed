@@ -1,0 +1,38 @@
+{
+  "n_seeds": 50,
+  "K": 2,
+  "chance": 0.5,
+  "by_battery_duration": [
+    {
+      "e_cap_hours": 4.0,
+      "recovery_acc": [
+        1.0,
+        0.0
+      ],
+      "within_pool_tick_corr": 0.842,
+      "cross_pool_tick_corr": 0.009,
+      "emergent_active_fraction": 0.698
+    },
+    {
+      "e_cap_hours": 1.0,
+      "recovery_acc": [
+        1.0,
+        0.0
+      ],
+      "within_pool_tick_corr": 0.886,
+      "cross_pool_tick_corr": 0.009,
+      "emergent_active_fraction": 0.703
+    },
+    {
+      "e_cap_hours": 0.25,
+      "recovery_acc": [
+        1.0,
+        0.0
+      ],
+      "within_pool_tick_corr": 0.952,
+      "cross_pool_tick_corr": 0.011,
+      "emergent_active_fraction": 0.697
+    }
+  ],
+  "finding": "Within a pool, members serving the same disaggregated AGC are highly synchronized (within-corr 0.84-0.95) regardless of battery duration; cross-pool correlation ~0.01; recovery on emergent streams = 1.0. NOTE: SoC saturation under an equalizing split is SHARED across co-members (synchronized dropout), so it does NOT lower within-pool homogeneity; gamma<1 instead arises from member heterogeneity (unequal capacity, staggered or partial membership), which Section 8.8 sweeps as an abstract knob."
+}

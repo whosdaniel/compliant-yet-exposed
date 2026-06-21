@@ -1,0 +1,45 @@
+{
+  "cipher": "TLS_AES_256_GCM_SHA384",
+  "tls_overhead_min_B": 22,
+  "message_sizes": {
+    "oadrPoll (idle)": {
+      "plaintext": 48,
+      "wire": 70,
+      "overhead": 22
+    },
+    "ieee2030.5 MMR telemetry": {
+      "plaintext": 104,
+      "wire": 126,
+      "overhead": 22
+    },
+    "oadrReport telemetry (active)": {
+      "plaintext": 319,
+      "wire": 341,
+      "overhead": 22
+    },
+    "setpoint (Modbus write)": {
+      "plaintext": 12,
+      "wire": 34,
+      "overhead": 22
+    },
+    "oadrCreatedEvent (ack)": {
+      "plaintext": 121,
+      "wire": 143,
+      "overhead": 22
+    },
+    "oadrDistributeEvent (event delivery)": {
+      "plaintext": 1283,
+      "wire": 1305,
+      "overhead": 22
+    }
+  },
+  "idle_minute": {
+    "msgs": 2,
+    "bytes": 140
+  },
+  "active_minute": {
+    "msgs": 32,
+    "bytes": 7073
+  },
+  "note": "real ssl TLS encryption of schema-serialized payloads; not a live-deployment capture"
+}

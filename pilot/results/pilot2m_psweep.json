@@ -1,0 +1,278 @@
+[
+  {
+    "p": 0.05,
+    "K": 2,
+    "label": "p=0.05 K=2",
+    "acc": [
+      0.935,
+      0.153
+    ],
+    "ari": [
+      0.8445,
+      0.3592
+    ],
+    "pairwise_f1": [
+      0.9226,
+      0.1789
+    ],
+    "null_acc_p975_mean": 0.7301,
+    "null_ari_p975_mean": 0.1813,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 0.86,
+    "frac_sig_ari_p05": 0.86
+  },
+  {
+    "p": 0.05,
+    "K": 5,
+    "label": "p=0.05 K=5",
+    "acc": [
+      0.8673,
+      0.1331
+    ],
+    "ari": [
+      0.7778,
+      0.2202
+    ],
+    "pairwise_f1": [
+      0.8173,
+      0.1809
+    ],
+    "null_acc_p975_mean": 0.4861,
+    "null_ari_p975_mean": 0.1076,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 0.98,
+    "frac_sig_ari_p05": 0.98
+  },
+  {
+    "p": 0.1,
+    "K": 2,
+    "label": "p=0.1 K=2",
+    "acc": [
+      0.9908,
+      0.0642
+    ],
+    "ari": [
+      0.9793,
+      0.1449
+    ],
+    "pairwise_f1": [
+      0.9895,
+      0.0733
+    ],
+    "null_acc_p975_mean": 0.7343,
+    "null_ari_p975_mean": 0.1884,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 0.98,
+    "frac_sig_ari_p05": 0.98
+  },
+  {
+    "p": 0.1,
+    "K": 5,
+    "label": "p=0.1 K=5",
+    "acc": [
+      0.9793,
+      0.0577
+    ],
+    "ari": [
+      0.9663,
+      0.0856
+    ],
+    "pairwise_f1": [
+      0.9725,
+      0.0698
+    ],
+    "null_acc_p975_mean": 0.4861,
+    "null_ari_p975_mean": 0.1058,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.25,
+    "K": 2,
+    "label": "p=0.25 K=2",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.25,
+    "K": 5,
+    "label": "p=0.25 K=5",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.4875,
+    "null_ari_p975_mean": 0.106,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.5,
+    "K": 2,
+    "label": "p=0.5 K=2",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.5,
+    "K": 5,
+    "label": "p=0.5 K=5",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.4875,
+    "null_ari_p975_mean": 0.106,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.75,
+    "K": 2,
+    "label": "p=0.75 K=2",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.75,
+    "K": 5,
+    "label": "p=0.75 K=5",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.4875,
+    "null_ari_p975_mean": 0.106,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.9,
+    "K": 2,
+    "label": "p=0.9 K=2",
+    "acc": [
+      1.0,
+      0.0
+    ],
+    "ari": [
+      1.0,
+      0.0
+    ],
+    "pairwise_f1": [
+      1.0,
+      0.0
+    ],
+    "null_acc_p975_mean": 0.7351,
+    "null_ari_p975_mean": 0.19,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  },
+  {
+    "p": 0.9,
+    "K": 5,
+    "label": "p=0.9 K=5",
+    "acc": [
+      0.994,
+      0.0296
+    ],
+    "ari": [
+      0.9895,
+      0.0516
+    ],
+    "pairwise_f1": [
+      0.9913,
+      0.0425
+    ],
+    "null_acc_p975_mean": 0.4868,
+    "null_ari_p975_mean": 0.1057,
+    "p_acc_median": 0.005,
+    "p_ari_median": 0.005,
+    "frac_sig_acc_p05": 1.0,
+    "frac_sig_ari_p05": 1.0
+  }
+]
