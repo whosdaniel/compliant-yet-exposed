@@ -1,7 +1,8 @@
 """pilot2n_drift.py -- does the W=128 'patient observer' result survive non-stationarity, or is it
 only stationary-IID sample-complexity? Three W-curves at the stressed regime (corr0.5, gamma0.5, K5):
   stationary    : labels + p/c/gamma fixed (= pilot2j upper bound)
-  param_drift   : labels FIXED, but p/c/gamma drift slowly across windows
+  param_drift   : labels FIXED, but p/c/gamma follow an AR(1) mean-reverting random walk across
+                  windows (genuine serial-persistent non-stationarity, not an IID re-draw)
   churn         : labels CHANGE over time (DERs switch pools) + param drift
 Ground truth = initial membership; churn should degrade recovery vs initial labels.
 """
@@ -21,17 +22,23 @@ def gen_drift(mode, K=5, M=30, W=128, p=0.5, corr=0.5, gamma=0.5, churn_rate=0.0
     pools = np.array([i % K for i in range(M)]); rng.shuffle(pools)
     pools_true = pools.copy()
     active = np.zeros((M, W), dtype=bool)
+    # persistent AR(1) mean-reverting drift state: x_w = x_{w-1} + phi*(mu - x_{w-1}) + step.
+    # Genuine serial persistence across windows (a bounded random walk), NOT an IID re-draw
+    # around a fixed center, so over W windows the regime actually wanders (real non-stationarity).
+    dp, dc, dg = p, corr, gamma
+    PHI, SP, SC, SG = 0.1, 0.05, 0.06, 0.06
     for w in range(W):
         if mode == "stationary":
             pw, cw, gw = p, corr, gamma
         else:
-            pw = float(np.clip(p + rng.normal(0, 0.15), 0.05, 0.95))
-            cw = float(np.clip(corr + rng.normal(0, 0.20), 0.0, 0.99))
-            gw = float(np.clip(gamma + rng.normal(0, 0.20), 0.0, 1.0))
+            dp = float(np.clip(dp + PHI * (p - dp) + rng.normal(0, SP), 0.05, 0.95))
+            dc = float(np.clip(dc + PHI * (corr - dc) + rng.normal(0, SC), 0.0, 0.99))
+            dg = float(np.clip(dg + PHI * (gamma - dg) + rng.normal(0, SG), 0.0, 1.0))
+            pw, cw, gw = dp, dc, dg
         if mode == "churn" and w > 0:
             for i in range(M):
                 if rng.random() < churn_rate:
-                    pools[i] = rng.integers(K)
+                    pools[i] = (pools[i] + 1 + rng.integers(K - 1)) % K   # reassign to a DIFFERENT pool (true rate)
         thr = norm.ppf(1.0 - pw)
         zsh = rng.standard_normal()
         pool_act = {k: (np.sqrt(cw) * zsh + np.sqrt(1.0 - cw) * rng.standard_normal()) > thr for k in range(K)}

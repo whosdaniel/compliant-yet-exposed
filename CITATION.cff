@@ -7,8 +7,8 @@ authors:
     given-names: Woowi
 license: MIT
 repository-code: "https://github.com/whosdaniel/compliant-yet-exposed"
-version: 1.0.0
-date-released: 2026-06-21
+version: 1.0.1
+date-released: 2026-07-14
 doi: 10.5281/zenodo.20785008
 identifiers:
   - type: doi
@@ -24,5 +24,5 @@ preferred-citation:
     - family-names: Kim
       given-names: Woowi
   year: 2026
-  # SSRN preprint DOI, to be filled in once the preprint is posted:
-  # doi: 10.2139/ssrn.XXXXXXXX
+  doi: 10.2139/ssrn.6973838
+  url: "https://ssrn.com/abstract=6973838"

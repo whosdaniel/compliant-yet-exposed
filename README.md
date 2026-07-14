@@ -4,8 +4,8 @@
 
 This repository reproduces the experiments and data figures in the paper **"Compliant Yet Exposed: A Passive Multi-Tenant Membership Side-Channel in DER Aggregation"** (Woowi Kim, 2026).
 
-Preprint: SSRN link to be added.
-Preprint DOI: to be added once the SSRN version is posted (see "Citation" below).
+Preprint: https://ssrn.com/abstract=6973838
+Preprint DOI: 10.2139/ssrn.6973838
 Archived release: https://doi.org/10.5281/zenodo.20785008 (Zenodo; concept DOI, resolves to the latest version).
 
 The paper studies a passive timing side-channel in distributed energy resource (DER) aggregation. A network observer that never decrypts traffic can recover dispatch-pool co-membership from the timing of per-DER control messages, under conditions stated in the paper. The study is a simulation grounded in real TLS message sizes measured over a local loopback connection. No real grid, DER, or third-party traffic is involved.
@@ -102,13 +102,13 @@ Each script prints a summary and writes its JSON into `pilot/results/`, so you c
 
 ## Citation
 
-If you use this code or its results, please cite the paper. A `CITATION.cff` file is included for citation managers. The preprint DOI will be added here once the SSRN version is posted.
+If you use this code or its results, please cite the paper. A `CITATION.cff` file is included for citation managers. Preprint: SSRN (DOI 10.2139/ssrn.6973838).
 
 This software release is archived on Zenodo. To cite the code itself, use the concept DOI 10.5281/zenodo.20785008 (always resolves to the latest version). The DOI for this specific release (v1.0.0) is 10.5281/zenodo.20785009.
 
 ```
 Woowi Kim. Compliant Yet Exposed: A Passive Multi-Tenant Membership Side-Channel
-in DER Aggregation. 2026. Preprint: SSRN (DOI to be added).
+in DER Aggregation. 2026. Preprint, SSRN. DOI 10.2139/ssrn.6973838.
 ```
 
 ## License
