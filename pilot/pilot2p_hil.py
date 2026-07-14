@@ -13,7 +13,7 @@ WHAT IS REAL HERE:
 WHAT IS NOT CLAIMED (honesty / anti-tautology):
   - This is an emulation, not a commercial DERMS; it shows A1 is REALIZABLE, not that any vendor does it.
   - It deliberately does NOT recover co-membership. The award/pool schedule is set by us, so clustering
-    the capture would recover our own schedule (tautology = the killed VPP failure). Co-membership
+    the capture would recover our own schedule (a tautology). Co-membership
     recovery and the A2/A3 conditions stay in the Section 8 simulation (argued, not measured).
   - Wall-clock cadence is COMPRESSED to keep the run short (4 s nominal -> TICK s); the per-DER message
     structure, counts, and active/idle contrast are real; only the absolute period is scaled (labeled).
