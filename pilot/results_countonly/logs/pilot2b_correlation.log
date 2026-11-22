@@ -1,0 +1,19 @@
+========================================================================
+PILOT 2b — award-timing correlation boundary (§8.4). chance = 0.5
+Monte-Carlo: mean +/- SD over 50 seeds/point. corr 0=distinct .. 1=identical.
+========================================================================
+  corr     acc     ±sd   ±ci95
+  0.00   1.000   0.000   0.000
+  0.25   1.000   0.000   0.000
+  0.50   1.000   0.000   0.000
+  0.75   0.995   0.035   0.010
+  0.90   0.995   0.035   0.010
+  0.95   0.960   0.122   0.034
+  0.98   0.921   0.172   0.048
+  0.99   0.864   0.202   0.056
+  1.00   0.568   0.056   0.015
+
+-> co-membership accuracy decays to chance as cross-pool award timing correlates.
+   This is the empirical form of the award-timing condition: the attack survives only
+   where pools have distinguishable award windows (moderate corr), the paper's honest hinge.
+saved -> <repo>/pilot/results_countonly/pilot2b_correlation.json

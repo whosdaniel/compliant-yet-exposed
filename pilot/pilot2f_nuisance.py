@@ -26,7 +26,8 @@ from pilot2_command_channel import (
     _z, cluster, accuracy, ci95,
 )
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+from pilot2_command_channel import observed_features  # amendment 1 feature switch
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 
 def gen_nuisance(M=24, K=2, W=24, p_award=0.5, seed=0,
@@ -66,7 +67,7 @@ def gen_nuisance(M=24, K=2, W=24, p_award=0.5, seed=0,
         siz = siz + rng.normal(0, 120.0 * mag_het, (M, 1))
     cnt = rng.poisson(np.clip(cnt, 1, None)).astype(float)
     siz = siz + rng.normal(0, np.where(active, SZ_ACT_SD, SZ_IDLE_SD))
-    feat = np.hstack([_z(cnt), _z(siz)])
+    feat = observed_features(_z(cnt), _z(siz))
     return feat, pools
 
 
@@ -84,7 +85,7 @@ def main():
     print("== (1) per-DER MAGNITUDE heterogeneity (z-norm should remove it) K=2 W=24 ==")
     for mh in (0.0, 0.5, 1.0, 2.0):
         m, sd = run(K=2, mag_het=mh)
-        out["mag_het_invariance"].append([mh, round(m, 3), round(sd, 3)])
+        out["mag_het_invariance"].append([mh, round(m, 6), round(sd, 6)])
         print(f"  mag_het={mh}: acc={m:.3f}±{sd:.3f}")
 
     # (2a) per-DER responsiveness spread (weak responders) -- genuine SNR competition
@@ -94,8 +95,8 @@ def main():
         curve = []
         for sh in (0.0, 0.3, 0.6, 0.9):
             m, sd = run(K=K, swing_het=sh, M=max(24, 6 * K))
-            curve.append([sh, round(m, 3), round(sd, 3)])
-        out["swing_het_by_K"].append({"K": K, "chance": round(1.0 / K, 3), "curve": curve})
+            curve.append([sh, round(m, 6), round(sd, 6)])
+        out["swing_het_by_K"].append({"K": K, "chance": round(1.0 / K, 6), "curve": curve})
         print(f"  K={K} (chance {1.0/K:.2f}): " + " ".join(f"s{sh}:{a}" for sh, a, _ in curve))
 
     # (2b) structured bursty competing background (harder than pilot2c's uncorrelated phi)
@@ -105,8 +106,8 @@ def main():
         curve = []
         for b in (0.0, 0.25, 0.5, 0.75):
             m, sd = run(K=K, swing_het=0.3, bg=b, M=max(24, 6 * K))
-            curve.append([b, round(m, 3), round(sd, 3)])
-        out["structured_bg_by_K"].append({"K": K, "chance": round(1.0 / K, 3), "curve": curve})
+            curve.append([b, round(m, 6), round(sd, 6)])
+        out["structured_bg_by_K"].append({"K": K, "chance": round(1.0 / K, 6), "curve": curve})
         print(f"  K={K} (chance {1.0/K:.2f}): " + " ".join(f"b{b}:{a}" for b, a, _ in curve))
 
     # control: nuisance must NOT manufacture pools when there is no pool structure
@@ -114,7 +115,7 @@ def main():
     out["nopool_control"] = []
     for K in (2, 5):
         m, sd = run(K=K, kill_pool=True, swing_het=0.6, bg=0.5, mag_het=0.5, M=max(24, 6 * K))
-        out["nopool_control"].append({"K": K, "chance": round(1.0 / K, 3), "acc": round(m, 3), "sd": round(sd, 3)})
+        out["nopool_control"].append({"K": K, "chance": round(1.0 / K, 6), "acc": round(m, 6), "sd": round(sd, 6)})
         print(f"  K={K}: acc={m:.3f}±{sd:.3f} (chance {1.0/K:.2f})  -> nuisance does not invent pools")
 
     json.dump(out, open(os.path.join(RES, "pilot2f_nuisance.json"), "w"), indent=2)

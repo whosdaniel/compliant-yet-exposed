@@ -1,0 +1,99 @@
+{
+  "features": "count",
+  "amendment_sha256": "ecb31d17c0853fee9ac5c1075fb95c41691564b0f6292d3b46e415f274ee73be",
+  "python": "3.13.12",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.0",
+  "machine": "arm64 18 cores",
+  "runs": {
+    "pilot2_command_channel.py": {
+      "rc": 0,
+      "seconds": 0.5,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2b_correlation.py": {
+      "rc": 0,
+      "seconds": 0.6,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2c_sensitivity.py": {
+      "rc": 0,
+      "seconds": 0.6,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2d_within_pool.py": {
+      "rc": 0,
+      "seconds": 0.3,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2e_boundary.py": {
+      "rc": 0,
+      "seconds": 1.1,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2f_nuisance.py": {
+      "rc": 0,
+      "seconds": 0.5,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2h_disaggregation.py": {
+      "rc": 0,
+      "seconds": 0.8,
+      "finished": "2026-10-28 20:03:14 +0900"
+    },
+    "pilot2i_metrics.py": {
+      "rc": 0,
+      "seconds": 4.3,
+      "finished": "2026-10-28 20:03:18 +0900"
+    },
+    "pilot2j_wsweep.py": {
+      "rc": 0,
+      "seconds": 4.2,
+      "finished": "2026-10-28 20:03:18 +0900"
+    },
+    "pilot2k_ari_curves.py": {
+      "rc": 0,
+      "seconds": 6.0,
+      "finished": "2026-10-28 20:03:20 +0900"
+    },
+    "pilot2m_psweep.py": {
+      "rc": 0,
+      "seconds": 5.7,
+      "finished": "2026-10-28 20:03:20 +0900"
+    },
+    "pilot2n_drift.py": {
+      "rc": 0,
+      "seconds": 10.4,
+      "finished": "2026-10-28 20:03:25 +0900"
+    },
+    "pilot2o_fig_ari.py": {
+      "rc": 0,
+      "seconds": 0.7,
+      "finished": "2026-10-28 20:03:25 +0900"
+    },
+    "pilot2r_unknown_k.py": {
+      "rc": 0,
+      "seconds": 6.3,
+      "finished": "2026-10-28 20:03:25 +0900"
+    },
+    "pilot2s_scale.py": {
+      "rc": 0,
+      "seconds": 7126.4,
+      "finished": "2026-10-28 22:02:11 +0900"
+    },
+    "pilot2t_scale_analysis.py": {
+      "rc": 0,
+      "seconds": 1.9,
+      "finished": "2026-10-28 22:02:13 +0900"
+    },
+    "pilot2g_mechanism.py": {
+      "rc": 0,
+      "seconds": null,
+      "finished": "2026-10-28 20:10:17 +0900",
+      "note": "amendment 1a (reference/revision_r1/prereg_amendment1a_scope.md): part (A) re-run with CYE_FEATURES=count; run by hand after the regression check matched"
+    }
+  },
+  "amendment1a_sha256": "a18b6234ad6e5b7cf1949e5f938b5a9f967027ee61ab3938003b045de4345ad7",
+  "e8_integrity": "pilot2s_verify.py with CYE_FEATURES=count: 10440/10440 runs, 0 duplicates, 0 missing, 12 sampled re-runs identical (logs/pilot2s_verify.log)"
+}

@@ -1,0 +1,14 @@
+phi (bg fraction)     acc     ari
+             0.00   1.000   1.000
+             0.10   1.000   1.000
+             0.20   1.000   1.000
+             0.30   1.000   1.000
+             0.40   0.998   0.994
+             0.50   0.974   0.926
+             0.70   0.618   0.210
+             0.90   0.470   0.001
+
+chance: acc empirical floor (K=3) ~0.47; ARI null ~0
+-> co-membership recovery degrades gracefully as background contamination grows;
+   the clean (beta=0) model is an upper bound, as stated honestly in the paper.
+saved -> <repo>/pilot/results_countonly/pilot2c_sensitivity.json

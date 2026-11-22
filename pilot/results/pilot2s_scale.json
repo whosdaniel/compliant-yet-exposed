@@ -1,0 +1,10087 @@
+{
+  "prereg": "reference/revision_r1/prereg_E7_E8.md",
+  "configs": [
+    {
+      "M": 24,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2796,
+        0.2059
+      ],
+      "ari_silK": [
+        0.1049,
+        0.084
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 9.55
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3739,
+        0.2909
+      ],
+      "ari_silK": [
+        0.28,
+        0.247
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 6.2
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9789,
+        0.0918
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 2.2
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5356,
+        0.2236
+      ],
+      "ari_silK": [
+        0.439,
+        0.2352
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 4.1
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8631,
+        0.1969
+      ],
+      "ari_silK": [
+        0.8544,
+        0.2112
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 2.1
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9833,
+        0.0501
+      ],
+      "ari_silK": [
+        0.9833,
+        0.0501
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1805,
+        0.1129
+      ],
+      "ari_silK": [
+        0.1178,
+        0.0845
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 10.9
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9704,
+        0.0929
+      ],
+      "ari_silK": [
+        0.9731,
+        0.0821
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 4.1
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2945,
+        0.1487
+      ],
+      "ari_silK": [
+        0.258,
+        0.1681
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 6.75
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9604,
+        0.0984
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 4.1
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4493,
+        0.2305
+      ],
+      "ari_silK": [
+        0.372,
+        0.1983
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 7.7
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7431,
+        0.1956
+      ],
+      "ari_silK": [
+        0.6467,
+        0.2534
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 3.85
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9443,
+        0.0727
+      ],
+      "ari_silK": [
+        0.9159,
+        0.1065
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 3.95
+    },
+    {
+      "M": 24,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1173,
+        0.1003
+      ],
+      "ari_silK": [
+        0.1105,
+        0.0964
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 10.55
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8911,
+        0.1179
+      ],
+      "ari_silK": [
+        0.905,
+        0.099
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 7.6
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2006,
+        0.1301
+      ],
+      "ari_silK": [
+        0.1968,
+        0.1052
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 8.6
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9944,
+        0.0244
+      ],
+      "ari_silK": [
+        0.9889,
+        0.0391
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2927,
+        0.1172
+      ],
+      "ari_silK": [
+        0.2837,
+        0.1318
+      ],
+      "khat_exact": 0.25,
+      "khat_mean": 9.05
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4848,
+        0.1693
+      ],
+      "ari_silK": [
+        0.4442,
+        0.1713
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 7.4
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8273,
+        0.1309
+      ],
+      "ari_silK": [
+        0.7701,
+        0.1485
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 8.3
+    },
+    {
+      "M": 24,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3186,
+        0.2039
+      ],
+      "ari_silK": [
+        0.0705,
+        0.0402
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 19.75
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9012,
+        0.2965
+      ],
+      "ari_silK": [
+        0.8987,
+        0.304
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 2.95
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4541,
+        0.2321
+      ],
+      "ari_silK": [
+        0.2911,
+        0.3133
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 12.45
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6179,
+        0.1931
+      ],
+      "ari_silK": [
+        0.5414,
+        0.3016
+      ],
+      "khat_exact": 0.75,
+      "khat_mean": 6.3
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8857,
+        0.1311
+      ],
+      "ari_silK": [
+        0.8857,
+        0.1311
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9958,
+        0.0182
+      ],
+      "ari_silK": [
+        0.9958,
+        0.0182
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 48,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2048,
+        0.126
+      ],
+      "ari_silK": [
+        0.1045,
+        0.0643
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 20.4
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9213,
+        0.1379
+      ],
+      "ari_silK": [
+        0.913,
+        0.1389
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 4.3
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3491,
+        0.128
+      ],
+      "ari_silK": [
+        0.1745,
+        0.0927
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 16.2
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4884,
+        0.1081
+      ],
+      "ari_silK": [
+        0.3064,
+        0.1841
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 13.45
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.785,
+        0.0866
+      ],
+      "ari_silK": [
+        0.6984,
+        0.187
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 3.6
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.949,
+        0.0616
+      ],
+      "ari_silK": [
+        0.9234,
+        0.11
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 3.9
+    },
+    {
+      "M": 48,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1409,
+        0.0573
+      ],
+      "ari_silK": [
+        0.0913,
+        0.0491
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 21.85
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9201,
+        0.0828
+      ],
+      "ari_silK": [
+        0.9328,
+        0.0709
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 8.35
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2134,
+        0.0742
+      ],
+      "ari_silK": [
+        0.1606,
+        0.0613
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 18.85
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3198,
+        0.0915
+      ],
+      "ari_silK": [
+        0.2443,
+        0.0896
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 19.55
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5928,
+        0.1137
+      ],
+      "ari_silK": [
+        0.5667,
+        0.1008
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 12.05
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9036,
+        0.0652
+      ],
+      "ari_silK": [
+        0.8882,
+        0.0776
+      ],
+      "khat_exact": 0.65,
+      "khat_mean": 8.15
+    },
+    {
+      "M": 48,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0791,
+        0.0516
+      ],
+      "ari_silK": [
+        0.0684,
+        0.0545
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 22.45
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.823,
+        0.0678
+      ],
+      "ari_silK": [
+        0.8382,
+        0.0635
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 15.1
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1285,
+        0.0434
+      ],
+      "ari_silK": [
+        0.1286,
+        0.0485
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 18.9
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9944,
+        0.0244
+      ],
+      "ari_silK": [
+        0.9955,
+        0.0196
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 15.95
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2238,
+        0.0956
+      ],
+      "ari_silK": [
+        0.2221,
+        0.1048
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 19.5
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4581,
+        0.128
+      ],
+      "ari_silK": [
+        0.475,
+        0.1212
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 19.35
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.762,
+        0.1009
+      ],
+      "ari_silK": [
+        0.7624,
+        0.0967
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 17.7
+    },
+    {
+      "M": 48,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2278,
+        0.1753
+      ],
+      "ari_silK": [
+        0.0677,
+        0.0333
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 28.7
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9501,
+        0.2176
+      ],
+      "ari_silK": [
+        0.9501,
+        0.2176
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4193,
+        0.2169
+      ],
+      "ari_silK": [
+        0.0979,
+        0.2186
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 39.25
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6745,
+        0.1402
+      ],
+      "ari_silK": [
+        0.6008,
+        0.2667
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 8.25
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8894,
+        0.08
+      ],
+      "ari_silK": [
+        0.8894,
+        0.08
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9691,
+        0.0425
+      ],
+      "ari_silK": [
+        0.9691,
+        0.0425
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1602,
+        0.068
+      ],
+      "ari_silK": [
+        0.0879,
+        0.0245
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 32.6
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9138,
+        0.178
+      ],
+      "ari_silK": [
+        0.8985,
+        0.1767
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.322,
+        0.1127
+      ],
+      "ari_silK": [
+        0.0652,
+        0.0228
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 40.7
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5465,
+        0.1184
+      ],
+      "ari_silK": [
+        0.3122,
+        0.2444
+      ],
+      "khat_exact": 0.25,
+      "khat_mean": 20.9
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.781,
+        0.1163
+      ],
+      "ari_silK": [
+        0.623,
+        0.2719
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 6.85
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9556,
+        0.0292
+      ],
+      "ari_silK": [
+        0.9338,
+        0.0856
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 3.9
+    },
+    {
+      "M": 96,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1114,
+        0.0323
+      ],
+      "ari_silK": [
+        0.0876,
+        0.0246
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 34.0
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9195,
+        0.0997
+      ],
+      "ari_silK": [
+        0.9291,
+        0.0944
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 8.45
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2145,
+        0.0679
+      ],
+      "ari_silK": [
+        0.097,
+        0.0306
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 40.6
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9862,
+        0.0414
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 7.9
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.366,
+        0.1255
+      ],
+      "ari_silK": [
+        0.1635,
+        0.0579
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.65
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6114,
+        0.1087
+      ],
+      "ari_silK": [
+        0.4552,
+        0.2413
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 18.5
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9071,
+        0.0715
+      ],
+      "ari_silK": [
+        0.906,
+        0.0713
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 8.1
+    },
+    {
+      "M": 96,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.091,
+        0.0315
+      ],
+      "ari_silK": [
+        0.0839,
+        0.0321
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.75
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8411,
+        0.0542
+      ],
+      "ari_silK": [
+        0.8571,
+        0.0596
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 15.7
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1506,
+        0.0483
+      ],
+      "ari_silK": [
+        0.1151,
+        0.0419
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 41.25
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9852,
+        0.0296
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 15.8
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2218,
+        0.0576
+      ],
+      "ari_silK": [
+        0.1842,
+        0.0529
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 38.0
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4394,
+        0.0767
+      ],
+      "ari_silK": [
+        0.3864,
+        0.074
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 32.6
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8283,
+        0.0835
+      ],
+      "ari_silK": [
+        0.8149,
+        0.0923
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 18.8
+    },
+    {
+      "M": 96,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0505,
+        0.0233
+      ],
+      "ari_silK": [
+        0.0466,
+        0.0235
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.45
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.6814,
+        0.0542
+      ],
+      "ari_silK": [
+        0.6947,
+        0.0508
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 27.0
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0834,
+        0.0338
+      ],
+      "ari_silK": [
+        0.0845,
+        0.037
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 39.75
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9915,
+        0.0202
+      ],
+      "ari_silK": [
+        0.9865,
+        0.0249
+      ],
+      "khat_exact": 0.75,
+      "khat_mean": 31.7
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1323,
+        0.0469
+      ],
+      "ari_silK": [
+        0.1349,
+        0.06
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 37.4
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2936,
+        0.0606
+      ],
+      "ari_silK": [
+        0.2944,
+        0.0644
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 40.05
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6192,
+        0.0637
+      ],
+      "ari_silK": [
+        0.6319,
+        0.0664
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 36.2
+    },
+    {
+      "M": 96,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1836,
+        0.1644
+      ],
+      "ari_silK": [
+        0.0625,
+        0.0356
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.15
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.977,
+        0.1001
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 2.55
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4213,
+        0.2069
+      ],
+      "ari_silK": [
+        0.0147,
+        0.0043
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 87.3
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7387,
+        0.131
+      ],
+      "ari_silK": [
+        0.658,
+        0.2897
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 14.35
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9208,
+        0.0541
+      ],
+      "ari_silK": [
+        0.9208,
+        0.0541
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9824,
+        0.0246
+      ],
+      "ari_silK": [
+        0.9824,
+        0.0246
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 192,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1436,
+        0.0724
+      ],
+      "ari_silK": [
+        0.0854,
+        0.0271
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 41.2
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9776,
+        0.0724
+      ],
+      "ari_silK": [
+        0.959,
+        0.085
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 5.65
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3005,
+        0.1104
+      ],
+      "ari_silK": [
+        0.0305,
+        0.0102
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 89.45
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5135,
+        0.0979
+      ],
+      "ari_silK": [
+        0.2416,
+        0.2232
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 37.15
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8201,
+        0.0944
+      ],
+      "ari_silK": [
+        0.7187,
+        0.1978
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 3.45
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9716,
+        0.0215
+      ],
+      "ari_silK": [
+        0.9716,
+        0.0215
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 192,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1153,
+        0.0416
+      ],
+      "ari_silK": [
+        0.092,
+        0.0269
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.55
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9455,
+        0.086
+      ],
+      "ari_silK": [
+        0.9419,
+        0.0834
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 10.7
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1906,
+        0.0512
+      ],
+      "ari_silK": [
+        0.0501,
+        0.0119
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 87.1
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9933,
+        0.029
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 7.95
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3563,
+        0.0657
+      ],
+      "ari_silK": [
+        0.0864,
+        0.0247
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 77.75
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6948,
+        0.1045
+      ],
+      "ari_silK": [
+        0.6467,
+        0.1922
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 14.75
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9408,
+        0.0326
+      ],
+      "ari_silK": [
+        0.9408,
+        0.0326
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 192,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0873,
+        0.0272
+      ],
+      "ari_silK": [
+        0.0821,
+        0.0252
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 48.8
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8472,
+        0.0588
+      ],
+      "ari_silK": [
+        0.8617,
+        0.0566
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 17.55
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1192,
+        0.0264
+      ],
+      "ari_silK": [
+        0.0602,
+        0.0158
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 84.05
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9957,
+        0.0188
+      ],
+      "ari_silK": [
+        0.9864,
+        0.0272
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 15.8
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2361,
+        0.0421
+      ],
+      "ari_silK": [
+        0.1215,
+        0.0256
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 75.55
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5464,
+        0.0826
+      ],
+      "ari_silK": [
+        0.3348,
+        0.1726
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 58.5
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.857,
+        0.0639
+      ],
+      "ari_silK": [
+        0.8654,
+        0.0586
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 16.85
+    },
+    {
+      "M": 192,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.064,
+        0.0219
+      ],
+      "ari_silK": [
+        0.0649,
+        0.0219
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 49.7
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.7247,
+        0.0596
+      ],
+      "ari_silK": [
+        0.7326,
+        0.0547
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 28.55
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.082,
+        0.0201
+      ],
+      "ari_silK": [
+        0.0594,
+        0.0181
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 88.15
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9888,
+        0.0194
+      ],
+      "ari_silK": [
+        0.9798,
+        0.0243
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 31.45
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.161,
+        0.0396
+      ],
+      "ari_silK": [
+        0.1199,
+        0.0323
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 79.55
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3263,
+        0.0556
+      ],
+      "ari_silK": [
+        0.2642,
+        0.0577
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 76.35
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7158,
+        0.0736
+      ],
+      "ari_silK": [
+        0.7069,
+        0.0988
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 44.1
+    },
+    {
+      "M": 192,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0357,
+        0.0154
+      ],
+      "ari_silK": [
+        0.0354,
+        0.0143
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 49.45
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.5486,
+        0.0361
+      ],
+      "ari_silK": [
+        0.567,
+        0.0305
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 44.8
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0532,
+        0.018
+      ],
+      "ari_silK": [
+        0.0514,
+        0.0197
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 85.3
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9802,
+        0.018
+      ],
+      "ari_silK": [
+        0.9783,
+        0.0168
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 63.05
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1031,
+        0.0247
+      ],
+      "ari_silK": [
+        0.1036,
+        0.0282
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 78.8
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2336,
+        0.0544
+      ],
+      "ari_silK": [
+        0.244,
+        0.0551
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 80.5
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5287,
+        0.0548
+      ],
+      "ari_silK": [
+        0.5473,
+        0.0535
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 76.15
+    },
+    {
+      "M": 192,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1629,
+        0.1293
+      ],
+      "ari_silK": [
+        0.0721,
+        0.0268
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 41.65
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9984,
+        0.0068
+      ],
+      "ari_silK": [
+        0.951,
+        0.1469
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 4.6
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4223,
+        0.1959
+      ],
+      "ari_silK": [
+        0.0161,
+        0.0037
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 96.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6818,
+        0.1531
+      ],
+      "ari_silK": [
+        0.6354,
+        0.248
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 11.4
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.906,
+        0.0511
+      ],
+      "ari_silK": [
+        0.906,
+        0.0511
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9912,
+        0.0105
+      ],
+      "ari_silK": [
+        0.9912,
+        0.0105
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 384,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1423,
+        0.0515
+      ],
+      "ari_silK": [
+        0.096,
+        0.0237
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.65
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9966,
+        0.0133
+      ],
+      "ari_silK": [
+        0.9727,
+        0.065
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 6.45
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.284,
+        0.0765
+      ],
+      "ari_silK": [
+        0.0313,
+        0.0056
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.85
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5694,
+        0.1124
+      ],
+      "ari_silK": [
+        0.3448,
+        0.2299
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 21.3
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8378,
+        0.05
+      ],
+      "ari_silK": [
+        0.768,
+        0.1718
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 3.7
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9703,
+        0.0183
+      ],
+      "ari_silK": [
+        0.9703,
+        0.0183
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 384,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1102,
+        0.0304
+      ],
+      "ari_silK": [
+        0.098,
+        0.0189
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 51.85
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9556,
+        0.0762
+      ],
+      "ari_silK": [
+        0.944,
+        0.0655
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 11.45
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1816,
+        0.0514
+      ],
+      "ari_silK": [
+        0.0478,
+        0.0078
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.75
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9934,
+        0.0286
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 7.95
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3872,
+        0.0837
+      ],
+      "ari_silK": [
+        0.0821,
+        0.0146
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.95
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7061,
+        0.0646
+      ],
+      "ari_silK": [
+        0.6611,
+        0.1541
+      ],
+      "khat_exact": 0.45,
+      "khat_mean": 7.7
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9409,
+        0.023
+      ],
+      "ari_silK": [
+        0.9418,
+        0.0213
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 8.05
+    },
+    {
+      "M": 384,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0911,
+        0.0215
+      ],
+      "ari_silK": [
+        0.0856,
+        0.0187
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 57.6
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8755,
+        0.0581
+      ],
+      "ari_silK": [
+        0.8859,
+        0.0544
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 18.1
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1272,
+        0.0274
+      ],
+      "ari_silK": [
+        0.0613,
+        0.0096
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.8
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.996,
+        0.0176
+      ],
+      "ari_silK": [
+        0.9902,
+        0.0233
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 15.85
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2419,
+        0.0437
+      ],
+      "ari_silK": [
+        0.1091,
+        0.02
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.05
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5445,
+        0.0759
+      ],
+      "ari_silK": [
+        0.3518,
+        0.2171
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 68.45
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8839,
+        0.0408
+      ],
+      "ari_silK": [
+        0.8907,
+        0.0355
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 16.7
+    },
+    {
+      "M": 384,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0624,
+        0.0149
+      ],
+      "ari_silK": [
+        0.0623,
+        0.0137
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 56.75
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.7596,
+        0.0579
+      ],
+      "ari_silK": [
+        0.7646,
+        0.057
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 29.85
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0844,
+        0.0148
+      ],
+      "ari_silK": [
+        0.0636,
+        0.0101
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 96.0
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9942,
+        0.0138
+      ],
+      "ari_silK": [
+        0.9882,
+        0.0191
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 31.65
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1437,
+        0.0254
+      ],
+      "ari_silK": [
+        0.1159,
+        0.0193
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 96.0
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3803,
+        0.0594
+      ],
+      "ari_silK": [
+        0.291,
+        0.0413
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.95
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7781,
+        0.0449
+      ],
+      "ari_silK": [
+        0.8022,
+        0.0333
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 35.75
+    },
+    {
+      "M": 384,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0404,
+        0.0129
+      ],
+      "ari_silK": [
+        0.0398,
+        0.0123
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 57.25
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.6139,
+        0.0329
+      ],
+      "ari_silK": [
+        0.6231,
+        0.0348
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.2
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0569,
+        0.008
+      ],
+      "ari_silK": [
+        0.0528,
+        0.0085
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.95
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9922,
+        0.0106
+      ],
+      "ari_silK": [
+        0.9907,
+        0.011
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 63.5
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.109,
+        0.0195
+      ],
+      "ari_silK": [
+        0.1096,
+        0.018
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.7
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2397,
+        0.0458
+      ],
+      "ari_silK": [
+        0.2476,
+        0.0464
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.85
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6129,
+        0.046
+      ],
+      "ari_silK": [
+        0.6203,
+        0.0478
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 91.5
+    },
+    {
+      "M": 384,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1353,
+        0.1419
+      ],
+      "ari_silK": [
+        0.0633,
+        0.0282
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 45.9
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3582,
+        0.2118
+      ],
+      "ari_silK": [
+        0.0554,
+        0.1724
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 91.2
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7021,
+        0.1283
+      ],
+      "ari_silK": [
+        0.7021,
+        0.1283
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9231,
+        0.0604
+      ],
+      "ari_silK": [
+        0.9231,
+        0.0604
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9943,
+        0.0085
+      ],
+      "ari_silK": [
+        0.9943,
+        0.0085
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1069,
+        0.0462
+      ],
+      "ari_silK": [
+        0.0771,
+        0.02
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 50.45
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9504,
+        0.1441
+      ],
+      "ari_silK": [
+        0.9425,
+        0.129
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 5.45
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2438,
+        0.0723
+      ],
+      "ari_silK": [
+        0.0305,
+        0.007
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.85
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5305,
+        0.1178
+      ],
+      "ari_silK": [
+        0.3907,
+        0.189
+      ],
+      "khat_exact": 0.25,
+      "khat_mean": 2.75
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8418,
+        0.0626
+      ],
+      "ari_silK": [
+        0.7838,
+        0.1536
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 3.75
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9796,
+        0.0099
+      ],
+      "ari_silK": [
+        0.9796,
+        0.0099
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 768,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0951,
+        0.031
+      ],
+      "ari_silK": [
+        0.0826,
+        0.0198
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 55.0
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9294,
+        0.0843
+      ],
+      "ari_silK": [
+        0.9253,
+        0.0834
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 10.95
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1664,
+        0.0553
+      ],
+      "ari_silK": [
+        0.0461,
+        0.0098
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.35
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4055,
+        0.083
+      ],
+      "ari_silK": [
+        0.2266,
+        0.1814
+      ],
+      "khat_exact": 0.15,
+      "khat_mean": 22.6
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7246,
+        0.0639
+      ],
+      "ari_silK": [
+        0.7131,
+        0.108
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 8.1
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9501,
+        0.0191
+      ],
+      "ari_silK": [
+        0.9521,
+        0.0168
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 8.15
+    },
+    {
+      "M": 768,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0777,
+        0.0197
+      ],
+      "ari_silK": [
+        0.076,
+        0.0131
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 58.9
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8659,
+        0.0686
+      ],
+      "ari_silK": [
+        0.8736,
+        0.0625
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 18.7
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1228,
+        0.0284
+      ],
+      "ari_silK": [
+        0.0653,
+        0.0161
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.55
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9959,
+        0.0177
+      ],
+      "ari_silK": [
+        0.9849,
+        0.041
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 15.8
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2628,
+        0.0485
+      ],
+      "ari_silK": [
+        0.1216,
+        0.0263
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 90.45
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5614,
+        0.0632
+      ],
+      "ari_silK": [
+        0.5618,
+        0.1237
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 17.8
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9022,
+        0.04
+      ],
+      "ari_silK": [
+        0.911,
+        0.031
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 16.6
+    },
+    {
+      "M": 768,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0597,
+        0.0148
+      ],
+      "ari_silK": [
+        0.0604,
+        0.0153
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 59.95
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.7658,
+        0.062
+      ],
+      "ari_silK": [
+        0.775,
+        0.0621
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 30.7
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.081,
+        0.0149
+      ],
+      "ari_silK": [
+        0.0635,
+        0.0128
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.75
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9912,
+        0.016
+      ],
+      "ari_silK": [
+        0.9856,
+        0.0226
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 32.65
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1674,
+        0.0358
+      ],
+      "ari_silK": [
+        0.1372,
+        0.0241
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.4
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.408,
+        0.0667
+      ],
+      "ari_silK": [
+        0.3757,
+        0.091
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 79.1
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7913,
+        0.0494
+      ],
+      "ari_silK": [
+        0.8194,
+        0.0365
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 35.1
+    },
+    {
+      "M": 768,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0416,
+        0.0092
+      ],
+      "ari_silK": [
+        0.0418,
+        0.009
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 61.9
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.6166,
+        0.0389
+      ],
+      "ari_silK": [
+        0.6155,
+        0.0406
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.8
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0552,
+        0.0112
+      ],
+      "ari_silK": [
+        0.0537,
+        0.0111
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.85
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9835,
+        0.02
+      ],
+      "ari_silK": [
+        0.9848,
+        0.0216
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 64.65
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0987,
+        0.0172
+      ],
+      "ari_silK": [
+        0.1015,
+        0.0173
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.85
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9991,
+        0.0037
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 63.95
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2684,
+        0.0512
+      ],
+      "ari_silK": [
+        0.2864,
+        0.0545
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.9
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6703,
+        0.0677
+      ],
+      "ari_silK": [
+        0.7131,
+        0.0644
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 81.95
+    },
+    {
+      "M": 768,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.142,
+        0.1275
+      ],
+      "ari_silK": [
+        0.0612,
+        0.0289
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 42.05
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9753,
+        0.1078
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 6.7
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4379,
+        0.2393
+      ],
+      "ari_silK": [
+        0.2404,
+        0.3124
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 63.05
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6851,
+        0.1328
+      ],
+      "ari_silK": [
+        0.6851,
+        0.1328
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9132,
+        0.053
+      ],
+      "ari_silK": [
+        0.9132,
+        0.053
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9894,
+        0.0071
+      ],
+      "ari_silK": [
+        0.9894,
+        0.0071
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1172,
+        0.068
+      ],
+      "ari_silK": [
+        0.0813,
+        0.0354
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 49.5
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9479,
+        0.1602
+      ],
+      "ari_silK": [
+        0.9068,
+        0.1794
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 11.9
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2834,
+        0.1204
+      ],
+      "ari_silK": [
+        0.0748,
+        0.089
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 77.05
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9857,
+        0.0624
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 3.95
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5586,
+        0.0781
+      ],
+      "ari_silK": [
+        0.3471,
+        0.1441
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 2.4
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8376,
+        0.0517
+      ],
+      "ari_silK": [
+        0.7966,
+        0.1367
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 3.8
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9754,
+        0.0109
+      ],
+      "ari_silK": [
+        0.9754,
+        0.0109
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 1536,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1083,
+        0.0412
+      ],
+      "ari_silK": [
+        0.0927,
+        0.029
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 57.05
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9095,
+        0.1103
+      ],
+      "ari_silK": [
+        0.8929,
+        0.1093
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 14.35
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1752,
+        0.0493
+      ],
+      "ari_silK": [
+        0.053,
+        0.0247
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 81.05
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3949,
+        0.0637
+      ],
+      "ari_silK": [
+        0.2063,
+        0.1464
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 3.65
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7289,
+        0.0494
+      ],
+      "ari_silK": [
+        0.7112,
+        0.0771
+      ],
+      "khat_exact": 0.75,
+      "khat_mean": 7.75
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9588,
+        0.0105
+      ],
+      "ari_silK": [
+        0.9588,
+        0.0105
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 1536,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0832,
+        0.0274
+      ],
+      "ari_silK": [
+        0.0817,
+        0.0247
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 58.55
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8651,
+        0.0706
+      ],
+      "ari_silK": [
+        0.8657,
+        0.0638
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 22.85
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.116,
+        0.0284
+      ],
+      "ari_silK": [
+        0.0604,
+        0.013
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.4
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9961,
+        0.0171
+      ],
+      "ari_silK": [
+        0.9856,
+        0.0256
+      ],
+      "khat_exact": 0.75,
+      "khat_mean": 17.75
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2573,
+        0.0438
+      ],
+      "ari_silK": [
+        0.0876,
+        0.071
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 21.95
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5615,
+        0.0588
+      ],
+      "ari_silK": [
+        0.5642,
+        0.1471
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 17.4
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9097,
+        0.0261
+      ],
+      "ari_silK": [
+        0.9202,
+        0.0209
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 16.9
+    },
+    {
+      "M": 1536,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0633,
+        0.0192
+      ],
+      "ari_silK": [
+        0.0647,
+        0.0203
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 59.55
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.7799,
+        0.0476
+      ],
+      "ari_silK": [
+        0.7883,
+        0.0477
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 34.7
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0783,
+        0.0175
+      ],
+      "ari_silK": [
+        0.0618,
+        0.0134
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.65
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9944,
+        0.0133
+      ],
+      "ari_silK": [
+        0.9868,
+        0.0243
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 32.75
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1613,
+        0.025
+      ],
+      "ari_silK": [
+        0.1363,
+        0.0248
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.25
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4155,
+        0.0466
+      ],
+      "ari_silK": [
+        0.4517,
+        0.0616
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 56.0
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7956,
+        0.041
+      ],
+      "ari_silK": [
+        0.8485,
+        0.0276
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 36.1
+    },
+    {
+      "M": 1536,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0446,
+        0.0156
+      ],
+      "ari_silK": [
+        0.0448,
+        0.0154
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 62.75
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.6435,
+        0.0334
+      ],
+      "ari_silK": [
+        0.647,
+        0.0368
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 48.8
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0541,
+        0.0096
+      ],
+      "ari_silK": [
+        0.0533,
+        0.0093
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.65
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9887,
+        0.0109
+      ],
+      "ari_silK": [
+        0.9875,
+        0.0108
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 64.15
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1002,
+        0.0188
+      ],
+      "ari_silK": [
+        0.1008,
+        0.0176
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 95.2
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9992,
+        0.0036
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 63.95
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2876,
+        0.0443
+      ],
+      "ari_silK": [
+        0.3114,
+        0.0491
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 93.7
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6361,
+        0.053
+      ],
+      "ari_silK": [
+        0.7399,
+        0.0406
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 81.05
+    },
+    {
+      "M": 1536,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1484,
+        0.1249
+      ],
+      "ari_silK": [
+        0.0653,
+        0.029
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.6
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9499,
+        0.2179
+      ],
+      "ari_silK": [
+        0.9499,
+        0.2179
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3824,
+        0.2125
+      ],
+      "ari_silK": [
+        0.2236,
+        0.2914
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 63.05
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7162,
+        0.0952
+      ],
+      "ari_silK": [
+        0.7162,
+        0.0952
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9309,
+        0.0478
+      ],
+      "ari_silK": [
+        0.9309,
+        0.0478
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9889,
+        0.0104
+      ],
+      "ari_silK": [
+        0.9889,
+        0.0104
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1163,
+        0.0607
+      ],
+      "ari_silK": [
+        0.0911,
+        0.0236
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 56.95
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.98,
+        0.0806
+      ],
+      "ari_silK": [
+        0.9447,
+        0.1088
+      ],
+      "khat_exact": 0.75,
+      "khat_mean": 6.75
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2443,
+        0.0987
+      ],
+      "ari_silK": [
+        0.1152,
+        0.0898
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 43.95
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5959,
+        0.0918
+      ],
+      "ari_silK": [
+        0.428,
+        0.1811
+      ],
+      "khat_exact": 0.25,
+      "khat_mean": 2.75
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8583,
+        0.0654
+      ],
+      "ari_silK": [
+        0.8147,
+        0.1072
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 3.8
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9829,
+        0.0095
+      ],
+      "ari_silK": [
+        0.9829,
+        0.0095
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 3072,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1033,
+        0.027
+      ],
+      "ari_silK": [
+        0.0923,
+        0.0183
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 58.85
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9305,
+        0.073
+      ],
+      "ari_silK": [
+        0.918,
+        0.0687
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 12.2
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1556,
+        0.0531
+      ],
+      "ari_silK": [
+        0.05,
+        0.0147
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 85.25
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9935,
+        0.0282
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 7.95
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4021,
+        0.0588
+      ],
+      "ari_silK": [
+        0.208,
+        0.1396
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 3.75
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7663,
+        0.0463
+      ],
+      "ari_silK": [
+        0.7696,
+        0.0487
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 8.35
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9604,
+        0.0226
+      ],
+      "ari_silK": [
+        0.9608,
+        0.0226
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 8.05
+    },
+    {
+      "M": 3072,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0867,
+        0.0187
+      ],
+      "ari_silK": [
+        0.0848,
+        0.0186
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 62.15
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8887,
+        0.0635
+      ],
+      "ari_silK": [
+        0.8905,
+        0.063
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 20.95
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1059,
+        0.0243
+      ],
+      "ari_silK": [
+        0.0583,
+        0.0112
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 92.9
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9967,
+        0.0144
+      ],
+      "ari_silK": [
+        0.9877,
+        0.0311
+      ],
+      "khat_exact": 0.85,
+      "khat_mean": 15.8
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2777,
+        0.0366
+      ],
+      "ari_silK": [
+        0.104,
+        0.1147
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 5.2
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5984,
+        0.0494
+      ],
+      "ari_silK": [
+        0.632,
+        0.0681
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 18.35
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9125,
+        0.0226
+      ],
+      "ari_silK": [
+        0.9226,
+        0.0191
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 16.85
+    },
+    {
+      "M": 3072,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0666,
+        0.0163
+      ],
+      "ari_silK": [
+        0.0679,
+        0.0178
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 63.9
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.7921,
+        0.0463
+      ],
+      "ari_silK": [
+        0.7934,
+        0.0522
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 32.85
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0704,
+        0.0155
+      ],
+      "ari_silK": [
+        0.0592,
+        0.014
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 93.0
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9968,
+        0.0097
+      ],
+      "ari_silK": [
+        0.9829,
+        0.0229
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 31.45
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1668,
+        0.0287
+      ],
+      "ari_silK": [
+        0.0301,
+        0.0386
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 11.25
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.415,
+        0.0499
+      ],
+      "ari_silK": [
+        0.4818,
+        0.0627
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 49.6
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8041,
+        0.051
+      ],
+      "ari_silK": [
+        0.8558,
+        0.0301
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.45
+    },
+    {
+      "M": 3072,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0472,
+        0.0162
+      ],
+      "ari_silK": [
+        0.0471,
+        0.0162
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 64.95
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.6685,
+        0.0297
+      ],
+      "ari_silK": [
+        0.6676,
+        0.0342
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 50.5
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.048,
+        0.01
+      ],
+      "ari_silK": [
+        0.0471,
+        0.0101
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.45
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9923,
+        0.0095
+      ],
+      "ari_silK": [
+        0.992,
+        0.0094
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 63.5
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.097,
+        0.0219
+      ],
+      "ari_silK": [
+        0.0296,
+        0.0483
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 20.5
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2882,
+        0.0338
+      ],
+      "ari_silK": [
+        0.3271,
+        0.0417
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.8
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5775,
+        0.083
+      ],
+      "ari_silK": [
+        0.7538,
+        0.04
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 83.3
+    },
+    {
+      "M": 3072,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1508,
+        0.124
+      ],
+      "ari_silK": [
+        0.0724,
+        0.018
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.45
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9994,
+        0.002
+      ],
+      "ari_silK": [
+        0.9994,
+        0.002
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.3215,
+        0.2272
+      ],
+      "ari_silK": [
+        0.2284,
+        0.272
+      ],
+      "khat_exact": 0.4,
+      "khat_mean": 58.4
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6829,
+        0.2054
+      ],
+      "ari_silK": [
+        0.6829,
+        0.2054
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9232,
+        0.0621
+      ],
+      "ari_silK": [
+        0.9232,
+        0.0621
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9919,
+        0.0089
+      ],
+      "ari_silK": [
+        0.9919,
+        0.0089
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1125,
+        0.0368
+      ],
+      "ari_silK": [
+        0.0906,
+        0.0137
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 54.8
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9503,
+        0.117
+      ],
+      "ari_silK": [
+        0.9407,
+        0.1069
+      ],
+      "khat_exact": 0.75,
+      "khat_mean": 4.9
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2311,
+        0.0788
+      ],
+      "ari_silK": [
+        0.1367,
+        0.0831
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 30.0
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9857,
+        0.0623
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 3.95
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5625,
+        0.0864
+      ],
+      "ari_silK": [
+        0.3034,
+        0.127
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 2.2
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8683,
+        0.0468
+      ],
+      "ari_silK": [
+        0.8332,
+        0.1397
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 3.85
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9835,
+        0.0079
+      ],
+      "ari_silK": [
+        0.9706,
+        0.061
+      ],
+      "khat_exact": 0.95,
+      "khat_mean": 3.95
+    },
+    {
+      "M": 6144,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1066,
+        0.0268
+      ],
+      "ari_silK": [
+        0.0947,
+        0.0169
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 58.8
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9109,
+        0.0838
+      ],
+      "ari_silK": [
+        0.9059,
+        0.0726
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 10.1
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1402,
+        0.0389
+      ],
+      "ari_silK": [
+        0.0504,
+        0.0164
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 47.15
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9871,
+        0.0387
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 7.9
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.4253,
+        0.0845
+      ],
+      "ari_silK": [
+        0.2206,
+        0.1768
+      ],
+      "khat_exact": 0.1,
+      "khat_mean": 3.6
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.7543,
+        0.0568
+      ],
+      "ari_silK": [
+        0.743,
+        0.0756
+      ],
+      "khat_exact": 0.55,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9636,
+        0.0132
+      ],
+      "ari_silK": [
+        0.9636,
+        0.0132
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 6144,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0829,
+        0.0197
+      ],
+      "ari_silK": [
+        0.0827,
+        0.0188
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 61.75
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.8549,
+        0.0616
+      ],
+      "ari_silK": [
+        0.8576,
+        0.0571
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 18.6
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0952,
+        0.0236
+      ],
+      "ari_silK": [
+        0.0526,
+        0.012
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 89.6
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9937,
+        0.0189
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 15.9
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2652,
+        0.0571
+      ],
+      "ari_silK": [
+        0.0555,
+        0.051
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.4
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.5837,
+        0.0525
+      ],
+      "ari_silK": [
+        0.6086,
+        0.1431
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 17.95
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.9248,
+        0.0189
+      ],
+      "ari_silK": [
+        0.9303,
+        0.0172
+      ],
+      "khat_exact": 0.35,
+      "khat_mean": 16.65
+    },
+    {
+      "M": 6144,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0662,
+        0.0153
+      ],
+      "ari_silK": [
+        0.0674,
+        0.0156
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 64.85
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.7677,
+        0.0491
+      ],
+      "ari_silK": [
+        0.775,
+        0.0459
+      ],
+      "khat_exact": 0.05,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0635,
+        0.0147
+      ],
+      "ari_silK": [
+        0.053,
+        0.0106
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.1
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9983,
+        0.007
+      ],
+      "ari_silK": [
+        0.9945,
+        0.0114
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 33.45
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.1611,
+        0.0352
+      ],
+      "ari_silK": [
+        0.0157,
+        0.0046
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.411,
+        0.048
+      ],
+      "ari_silK": [
+        0.4735,
+        0.1253
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 45.35
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.8286,
+        0.0354
+      ],
+      "ari_silK": [
+        0.8747,
+        0.0238
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.6
+    },
+    {
+      "M": 6144,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0446,
+        0.012
+      ],
+      "ari_silK": [
+        0.0446,
+        0.0121
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 64.45
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.6479,
+        0.0405
+      ],
+      "ari_silK": [
+        0.6474,
+        0.0367
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 48.0
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0443,
+        0.0102
+      ],
+      "ari_silK": [
+        0.0432,
+        0.01
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 94.15
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        0.9934,
+        0.0108
+      ],
+      "ari_silK": [
+        0.9926,
+        0.0103
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 65.15
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.0981,
+        0.022
+      ],
+      "ari_silK": [
+        0.0053,
+        0.0013
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.2849,
+        0.0314
+      ],
+      "ari_silK": [
+        0.2723,
+        0.1567
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 71.6
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 20,
+      "ari_oracle": [
+        0.6264,
+        0.0588
+      ],
+      "ari_silK": [
+        0.7905,
+        0.0293
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 83.45
+    },
+    {
+      "M": 6144,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 20,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 6,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.1441,
+        0.1146
+      ],
+      "ari_silK": [
+        0.0696,
+        0.0267
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 44.2
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 6,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.9999,
+        0.0003
+      ],
+      "ari_silK": [
+        0.9999,
+        0.0003
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 12,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.2756,
+        0.2242
+      ],
+      "ari_silK": [
+        0.1705,
+        0.2452
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 67.6
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 12,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.8347,
+        0.065
+      ],
+      "ari_silK": [
+        0.8347,
+        0.065
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 48,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.9351,
+        0.0334
+      ],
+      "ari_silK": [
+        0.9351,
+        0.0334
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 48,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.9953,
+        0.0042
+      ],
+      "ari_silK": [
+        0.9953,
+        0.0042
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 6,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.1457,
+        0.04
+      ],
+      "ari_silK": [
+        0.0951,
+        0.0139
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 53.3
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 6,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.9334,
+        0.1307
+      ],
+      "ari_silK": [
+        0.926,
+        0.117
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 4.8
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 12,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.2012,
+        0.0802
+      ],
+      "ari_silK": [
+        0.0975,
+        0.0606
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 39.6
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 12,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9714,
+        0.0857
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 3.9
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.6286,
+        0.0844
+      ],
+      "ari_silK": [
+        0.3992,
+        0.1678
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 2.6
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 48,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.8814,
+        0.0367
+      ],
+      "ari_silK": [
+        0.8373,
+        0.0997
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 3.8
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 48,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.985,
+        0.0069
+      ],
+      "ari_silK": [
+        0.985,
+        0.0069
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 12288,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 6,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.1146,
+        0.0279
+      ],
+      "ari_silK": [
+        0.1013,
+        0.0163
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 59.5
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 6,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.9251,
+        0.0752
+      ],
+      "ari_silK": [
+        0.9219,
+        0.0815
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 9.0
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 12,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.1376,
+        0.0406
+      ],
+      "ari_silK": [
+        0.0517,
+        0.0126
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 38.2
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 12,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9742,
+        0.0516
+      ],
+      "khat_exact": 0.8,
+      "khat_mean": 7.8
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.4481,
+        0.0788
+      ],
+      "ari_silK": [
+        0.2488,
+        0.1522
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 3.7
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 48,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.7623,
+        0.0431
+      ],
+      "ari_silK": [
+        0.7696,
+        0.0396
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 8.4
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 48,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.967,
+        0.0076
+      ],
+      "ari_silK": [
+        0.9673,
+        0.0077
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 8.1
+    },
+    {
+      "M": 12288,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 6,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.0896,
+        0.0103
+      ],
+      "ari_silK": [
+        0.09,
+        0.0088
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 62.8
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 6,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.888,
+        0.0427
+      ],
+      "ari_silK": [
+        0.8931,
+        0.0406
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 16.5
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 12,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.0822,
+        0.0252
+      ],
+      "ari_silK": [
+        0.0417,
+        0.0194
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 64.5
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 12,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9703,
+        0.0531
+      ],
+      "khat_exact": 0.7,
+      "khat_mean": 15.5
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.2882,
+        0.0461
+      ],
+      "ari_silK": [
+        0.0565,
+        0.0366
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.4
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 48,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.6101,
+        0.0617
+      ],
+      "ari_silK": [
+        0.6469,
+        0.0587
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 18.2
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 48,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.9329,
+        0.0115
+      ],
+      "ari_silK": [
+        0.9378,
+        0.0112
+      ],
+      "khat_exact": 0.3,
+      "khat_mean": 16.7
+    },
+    {
+      "M": 12288,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 6,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.0674,
+        0.0071
+      ],
+      "ari_silK": [
+        0.0693,
+        0.0076
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 64.6
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 6,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.7887,
+        0.0477
+      ],
+      "ari_silK": [
+        0.7954,
+        0.0469
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 28.3
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 12,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.0584,
+        0.0121
+      ],
+      "ari_silK": [
+        0.0397,
+        0.0171
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 75.5
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 12,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.9968,
+        0.0096
+      ],
+      "ari_silK": [
+        0.9729,
+        0.0356
+      ],
+      "khat_exact": 0.5,
+      "khat_mean": 31.1
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.1756,
+        0.0234
+      ],
+      "ari_silK": [
+        0.0177,
+        0.0044
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 48,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.4182,
+        0.0488
+      ],
+      "ari_silK": [
+        0.5162,
+        0.0443
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 43.5
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 48,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.8506,
+        0.0246
+      ],
+      "ari_silK": [
+        0.8886,
+        0.0169
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.6
+    },
+    {
+      "M": 12288,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 6,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.0485,
+        0.0065
+      ],
+      "ari_silK": [
+        0.0485,
+        0.0065
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 66.2
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 6,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.6383,
+        0.0323
+      ],
+      "ari_silK": [
+        0.6396,
+        0.0327
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 46.6
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 12,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.0421,
+        0.0059
+      ],
+      "ari_silK": [
+        0.0347,
+        0.0167
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 76.2
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 12,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        0.9948,
+        0.0079
+      ],
+      "ari_silK": [
+        0.9922,
+        0.0104
+      ],
+      "khat_exact": 0.6,
+      "khat_mean": 63.5
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.1041,
+        0.0172
+      ],
+      "ari_silK": [
+        0.0062,
+        0.0017
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        0.9984,
+        0.0047
+      ],
+      "khat_exact": 0.9,
+      "khat_mean": 63.9
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 48,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.2764,
+        0.0281
+      ],
+      "ari_silK": [
+        0.2676,
+        0.1716
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 65.0
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 48,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 10,
+      "ari_oracle": [
+        0.6586,
+        0.0721
+      ],
+      "ari_silK": [
+        0.8076,
+        0.029
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 82.7
+    },
+    {
+      "M": 12288,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 10,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 24576,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.8319,
+        0.0396
+      ],
+      "ari_silK": [
+        0.8319,
+        0.0396
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24576,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24576,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.992,
+        0.0035
+      ],
+      "ari_silK": [
+        0.992,
+        0.0035
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24576,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24576,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.6267,
+        0.046
+      ],
+      "ari_silK": [
+        0.6267,
+        0.046
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24576,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24576,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9799,
+        0.0092
+      ],
+      "ari_silK": [
+        0.9799,
+        0.0092
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24576,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 24576,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.4301,
+        0.0563
+      ],
+      "ari_silK": [
+        0.2369,
+        0.1489
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 3.4
+    },
+    {
+      "M": 24576,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 24576,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9713,
+        0.0079
+      ],
+      "ari_silK": [
+        0.9713,
+        0.0079
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 24576,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 24576,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.2701,
+        0.0482
+      ],
+      "ari_silK": [
+        0.1085,
+        0.11
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 4.4
+    },
+    {
+      "M": 24576,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 24576,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9365,
+        0.0068
+      ],
+      "ari_silK": [
+        0.9415,
+        0.0094
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 16.8
+    },
+    {
+      "M": 24576,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 24576,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.1731,
+        0.0391
+      ],
+      "ari_silK": [
+        0.0167,
+        0.006
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24576,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 24576,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.8739,
+        0.0082
+      ],
+      "ari_silK": [
+        0.9003,
+        0.0057
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 36.2
+    },
+    {
+      "M": 24576,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 24576,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.096,
+        0.0188
+      ],
+      "ari_silK": [
+        0.0066,
+        0.0006
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 24576,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 24576,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.7362,
+        0.0229
+      ],
+      "ari_silK": [
+        0.8308,
+        0.0116
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 74.2
+    },
+    {
+      "M": 24576,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 49152,
+      "K": 2,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.6532,
+        0.2617
+      ],
+      "ari_silK": [
+        0.6532,
+        0.2617
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 49152,
+      "K": 2,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 49152,
+      "K": 2,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9966,
+        0.002
+      ],
+      "ari_silK": [
+        0.9966,
+        0.002
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 49152,
+      "K": 2,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 49152,
+      "K": 4,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.6279,
+        0.0808
+      ],
+      "ari_silK": [
+        0.4197,
+        0.1912
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 2.6
+    },
+    {
+      "M": 49152,
+      "K": 4,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 49152,
+      "K": 4,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9908,
+        0.002
+      ],
+      "ari_silK": [
+        0.9908,
+        0.002
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 49152,
+      "K": 4,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 4.0
+    },
+    {
+      "M": 49152,
+      "K": 8,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.4667,
+        0.0218
+      ],
+      "ari_silK": [
+        0.3405,
+        0.1238
+      ],
+      "khat_exact": 0.2,
+      "khat_mean": 5.4
+    },
+    {
+      "M": 49152,
+      "K": 8,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 49152,
+      "K": 8,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9784,
+        0.0056
+      ],
+      "ari_silK": [
+        0.9784,
+        0.0056
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 49152,
+      "K": 8,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 8.0
+    },
+    {
+      "M": 49152,
+      "K": 16,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.3,
+        0.0216
+      ],
+      "ari_silK": [
+        0.0786,
+        0.0746
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 3.6
+    },
+    {
+      "M": 49152,
+      "K": 16,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 49152,
+      "K": 16,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.9435,
+        0.0151
+      ],
+      "ari_silK": [
+        0.95,
+        0.0125
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 17.2
+    },
+    {
+      "M": 49152,
+      "K": 16,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 16.0
+    },
+    {
+      "M": 49152,
+      "K": 32,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.1805,
+        0.0132
+      ],
+      "ari_silK": [
+        0.0155,
+        0.0025
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 49152,
+      "K": 32,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 49152,
+      "K": 32,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.8836,
+        0.0327
+      ],
+      "ari_silK": [
+        0.9089,
+        0.0215
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 35.8
+    },
+    {
+      "M": 49152,
+      "K": 32,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 32.0
+    },
+    {
+      "M": 49152,
+      "K": 64,
+      "W": 24,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.0992,
+        0.0045
+      ],
+      "ari_silK": [
+        0.0062,
+        0.0016
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 2.0
+    },
+    {
+      "M": 49152,
+      "K": 64,
+      "W": 24,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    },
+    {
+      "M": 49152,
+      "K": 64,
+      "W": 96,
+      "cond": "adverse",
+      "n": 5,
+      "ari_oracle": [
+        0.7558,
+        0.0536
+      ],
+      "ari_silK": [
+        0.8461,
+        0.0255
+      ],
+      "khat_exact": 0.0,
+      "khat_mean": 76.4
+    },
+    {
+      "M": 49152,
+      "K": 64,
+      "W": 96,
+      "cond": "favorable",
+      "n": 5,
+      "ari_oracle": [
+        1.0,
+        0.0
+      ],
+      "ari_silK": [
+        1.0,
+        0.0
+      ],
+      "khat_exact": 1.0,
+      "khat_mean": 64.0
+    }
+  ],
+  "tiers": [
+    {
+      "M": 24,
+      "runs": 600,
+      "t_tree_mean_s": 0.0,
+      "t_sel_mean_s": 0.003,
+      "peak_rss_gb": 0.14
+    },
+    {
+      "M": 48,
+      "runs": 800,
+      "t_tree_mean_s": 0.0,
+      "t_sel_mean_s": 0.006,
+      "peak_rss_gb": 0.14
+    },
+    {
+      "M": 96,
+      "runs": 1000,
+      "t_tree_mean_s": 0.0,
+      "t_sel_mean_s": 0.014,
+      "peak_rss_gb": 0.14
+    },
+    {
+      "M": 192,
+      "runs": 1200,
+      "t_tree_mean_s": 0.0,
+      "t_sel_mean_s": 0.042,
+      "peak_rss_gb": 0.14
+    },
+    {
+      "M": 384,
+      "runs": 1200,
+      "t_tree_mean_s": 0.002,
+      "t_sel_mean_s": 0.08,
+      "peak_rss_gb": 0.14
+    },
+    {
+      "M": 768,
+      "runs": 1200,
+      "t_tree_mean_s": 0.008,
+      "t_sel_mean_s": 0.205,
+      "peak_rss_gb": 0.16
+    },
+    {
+      "M": 1536,
+      "runs": 1200,
+      "t_tree_mean_s": 0.035,
+      "t_sel_mean_s": 0.661,
+      "peak_rss_gb": 0.2
+    },
+    {
+      "M": 3072,
+      "runs": 1200,
+      "t_tree_mean_s": 0.163,
+      "t_sel_mean_s": 2.331,
+      "peak_rss_gb": 0.35
+    },
+    {
+      "M": 6144,
+      "runs": 1200,
+      "t_tree_mean_s": 0.834,
+      "t_sel_mean_s": 8.991,
+      "peak_rss_gb": 1.0
+    },
+    {
+      "M": 12288,
+      "runs": 600,
+      "t_tree_mean_s": 4.665,
+      "t_sel_mean_s": 9.549,
+      "peak_rss_gb": 1.75
+    },
+    {
+      "M": 24576,
+      "runs": 120,
+      "t_tree_mean_s": 14.753,
+      "t_sel_mean_s": 7.535,
+      "peak_rss_gb": 5.76
+    },
+    {
+      "M": 49152,
+      "runs": 120,
+      "t_tree_mean_s": 51.285,
+      "t_sel_mean_s": 6.772,
+      "peak_rss_gb": 21.59
+    }
+  ]
+}

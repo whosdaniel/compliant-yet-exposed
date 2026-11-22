@@ -1,0 +1,19 @@
+== c-sweep (gamma=1, W=24, K=2)  [matches 8.4 table] ==
+  c=0.0                                    acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  c=0.5                                    acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  c=0.9                                    acc=0.991 ari=0.979 f1=0.990 | null_acc97.5=0.734 ari97.5=0.188 | p_ari~0.005 sigfrac=0.98
+  c=0.99                                   acc=0.864 ari=0.680 f1=0.844 | null_acc97.5=0.719 ari97.5=0.164 | p_ari~0.005 sigfrac=0.68
+  c=1.0                                    acc=0.570 ari=-0.003 f1=0.509 | null_acc97.5=0.692 ari97.5=0.119 | p_ari~1.000 sigfrac=0.02
+== gamma-sweep (corr=0, W=24)  [matches 8.7 table] ==
+  g=1.0 K=2                                acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  g=0.75 K=2                               acc=0.993 ari=0.974 f1=0.986 | null_acc97.5=0.733 ari97.5=0.187 | p_ari~0.005 sigfrac=1.00
+  g=0.5 K=2                                acc=0.902 ari=0.656 f1=0.825 | null_acc97.5=0.720 ari97.5=0.161 | p_ari~0.005 sigfrac=0.98
+  g=0.25 K=2                               acc=0.650 ari=0.098 f1=0.546 | null_acc97.5=0.710 ari97.5=0.146 | p_ari~0.428 sigfrac=0.22
+  g=0.0 K=2                                acc=0.567 ari=-0.012 f1=0.498 | null_acc97.5=0.710 ari97.5=0.149 | p_ari~0.729 sigfrac=0.00
+  g=1.0 K=5                                acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.487 ari97.5=0.106 | p_ari~0.005 sigfrac=1.00
+  g=0.75 K=5                               acc=0.972 ari=0.928 f1=0.941 | null_acc97.5=0.487 ari97.5=0.107 | p_ari~0.005 sigfrac=1.00
+  g=0.5 K=5                                acc=0.664 ari=0.376 f1=0.492 | null_acc97.5=0.475 ari97.5=0.105 | p_ari~0.005 sigfrac=0.96
+  g=0.25 K=5                               acc=0.435 ari=0.065 f1=0.238 | null_acc97.5=0.479 ari97.5=0.106 | p_ari~0.174 sigfrac=0.28
+  g=0.0 K=5                                acc=0.391 ari=0.012 f1=0.194 | null_acc97.5=0.480 ari97.5=0.105 | p_ari~0.490 sigfrac=0.04
+
+saved -> <repo>/pilot/results_countonly/pilot2k_ari_curves.json

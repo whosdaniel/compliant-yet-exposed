@@ -32,7 +32,7 @@ from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import pdist
 from scipy.optimize import linear_sum_assignment
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 # real-grounded params (identical to pilot2_command_channel.py)
 LAM_ACT = 900.0       # downlink setpoints/hr, active (~4 s cadence)

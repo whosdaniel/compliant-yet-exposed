@@ -1,0 +1,42 @@
+{
+  "config": "adverse, M 49152, K 64, W 96, downlink observer",
+  "runs": [
+    {
+      "seed": 0,
+      "ari_oracle": 0.7258401536717778,
+      "ari_silK": 0.8275111146833346,
+      "khat": 76,
+      "matches_stored_5dp": true
+    },
+    {
+      "seed": 1,
+      "ari_oracle": 0.8523964891974115,
+      "ari_silK": 0.8959615590027062,
+      "khat": 71,
+      "matches_stored_5dp": true
+    },
+    {
+      "seed": 2,
+      "ari_oracle": 0.787256456845423,
+      "ari_silK": 0.8692485404140108,
+      "khat": 77,
+      "matches_stored_5dp": true
+    },
+    {
+      "seed": 3,
+      "ari_oracle": 0.7588427544577306,
+      "ari_silK": 0.8404320855067997,
+      "khat": 83,
+      "matches_stored_5dp": true
+    },
+    {
+      "seed": 4,
+      "ari_oracle": 0.800661756803244,
+      "ari_silK": 0.867809732235813,
+      "khat": 71,
+      "matches_stored_5dp": true
+    }
+  ],
+  "mean_oracle": 0.7849995221951174,
+  "mean_silK": 0.8601926063685328
+}

@@ -1,0 +1,74 @@
+E8 scale: 10440 runs total, 0 already done, 10440 to run
+[tier M=24] 600 runs on 16 worker(s) ...
+   150/600 done (1s)
+   300/600 done (1s)
+   450/600 done (1s)
+   600/600 done (1s)
+[tier M=24] finished in 1s
+[tier M=48] 800 runs on 16 worker(s) ...
+   200/800 done (1s)
+   400/800 done (1s)
+   600/800 done (1s)
+   800/800 done (1s)
+[tier M=48] finished in 1s
+[tier M=96] 1000 runs on 16 worker(s) ...
+   250/1000 done (1s)
+   500/1000 done (1s)
+   750/1000 done (2s)
+   1000/1000 done (2s)
+[tier M=96] finished in 2s
+[tier M=192] 1200 runs on 16 worker(s) ...
+   300/1200 done (2s)
+   600/1200 done (3s)
+   900/1200 done (3s)
+   1200/1200 done (4s)
+[tier M=192] finished in 5s
+[tier M=384] 1200 runs on 16 worker(s) ...
+   300/1200 done (2s)
+   600/1200 done (4s)
+   900/1200 done (6s)
+   1200/1200 done (7s)
+[tier M=384] finished in 7s
+[tier M=768] 1200 runs on 16 worker(s) ...
+   300/1200 done (5s)
+   600/1200 done (9s)
+   900/1200 done (13s)
+   1200/1200 done (17s)
+[tier M=768] finished in 17s
+[tier M=1536] 1200 runs on 16 worker(s) ...
+   300/1200 done (14s)
+   600/1200 done (27s)
+   900/1200 done (39s)
+   1200/1200 done (52s)
+[tier M=1536] finished in 52s
+[tier M=3072] 1200 runs on 16 worker(s) ...
+   300/1200 done (48s)
+   600/1200 done (95s)
+   900/1200 done (143s)
+   1200/1200 done (189s)
+[tier M=3072] finished in 190s
+[tier M=6144] 1200 runs on 16 worker(s) ...
+   300/1200 done (185s)
+   600/1200 done (369s)
+   900/1200 done (549s)
+   1200/1200 done (727s)
+[tier M=6144] finished in 728s
+[tier M=12288] 600 runs on 16 worker(s) ...
+   150/600 done (139s)
+   300/600 done (264s)
+   450/600 done (382s)
+   600/600 done (504s)
+[tier M=12288] finished in 505s
+[tier M=24576] 120 runs on 4 worker(s) ...
+   30/120 done (130s)
+   60/120 done (271s)
+   90/120 done (391s)
+   120/120 done (533s)
+[tier M=24576] finished in 533s
+[tier M=49152] 120 runs on 1 worker(s) ...
+   30/120 done (1218s)
+   60/120 done (2539s)
+   90/120 done (3724s)
+   120/120 done (5082s)
+[tier M=49152] finished in 5082s
+saved -> <repo>/pilot/results_countonly/pilot2s_scale.json

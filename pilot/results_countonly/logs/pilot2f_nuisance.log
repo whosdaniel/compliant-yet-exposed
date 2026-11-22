@@ -1,0 +1,16 @@
+== (1) per-DER MAGNITUDE heterogeneity (z-norm should remove it) K=2 W=24 ==
+  mag_het=0.0: acc=1.000±0.000
+  mag_het=0.5: acc=1.000±0.000
+  mag_het=1.0: acc=1.000±0.000
+  mag_het=2.0: acc=1.000±0.000
+== (2a) per-DER RESPONSIVENESS spread (weak responders), bg=0 ==
+  K=2 (chance 0.50): s0.0:1.0 s0.3:1.0 s0.6:1.0 s0.9:1.0
+  K=5 (chance 0.20): s0.0:1.0 s0.3:1.0 s0.6:1.0 s0.9:1.0
+== (2b) STRUCTURED bursty competing background, swing_het=0.3 ==
+  K=2 (chance 0.50): b0.0:1.0 b0.25:1.0 b0.5:0.977 b0.75:0.593
+  K=5 (chance 0.20): b0.0:1.0 b0.25:1.0 b0.5:0.877 b0.75:0.411
+== control: no pool + heavy nuisance (must sit at chance) ==
+  K=2: acc=0.586±0.075 (chance 0.50)  -> nuisance does not invent pools
+  K=5: acc=0.377±0.040 (chance 0.20)  -> nuisance does not invent pools
+
+saved -> <repo>/pilot/results_countonly/pilot2f_nuisance.json

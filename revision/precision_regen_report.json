@@ -1,0 +1,133 @@
+{
+  "overall": "PASS",
+  "files": {
+    "results_countonly/pilot2_results.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2b_correlation.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2c_sensitivity.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2d_within_pool.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2e_boundary.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2f_nuisance.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2g_mechanism.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2h_disaggregation.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2i_metrics.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2j_wsweep.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2k_ari_curves.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2m_psweep.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2n_drift.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2o_fig_ari.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2r_unknown_k.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results_countonly/pilot2t_scale_analysis.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2_results.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2b_correlation.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2c_sensitivity.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2d_within_pool.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2e_boundary.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2f_nuisance.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2g_mechanism.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2h_disaggregation.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2i_metrics.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2j_wsweep.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2k_ari_curves.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2m_psweep.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2n_drift.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2o_fig_ari.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2r_unknown_k.json": {
+      "outside_interval": 0,
+      "examples": []
+    },
+    "results/pilot2t_scale_analysis.json": {
+      "outside_interval": 0,
+      "examples": []
+    }
+  }
+}

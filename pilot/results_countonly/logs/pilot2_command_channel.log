@@ -1,0 +1,48 @@
+================================================================================
+PILOT 2 — command-down (disaggregation setpoint) channel. baseline accuracy = 0.5
+real-grounded sizes: setpoint~34B(Modbus12+TLS22), telemetry~300B; active~4s, idle~30s
+Monte-Carlo: mean +/- SD over 50 seeds/condition (95% CI = 1.96*SD/sqrt(n)).
+================================================================================
+
+[E1 — TRIVIAL, *not* a finding] distinct pool windows, no defense: acc=1.000±0.000 (ari=1.00)
+   (definitional: active windows visible → pools separable. = 'spillover exists' analog.)
+
+[E2 — FUNCTION-SEPARATION ★ headline] does timing recover CO-MEMBERSHIP vs FUNCTION?
+   real (distinct pool windows)        acc=1.000±0.000 ari=1.00
+   function-only (pools share windows)  acc=0.569±0.066 ari=0.00   <- function held constant
+   random-label control                 acc=0.578±0.056   chance=0.500
+   -> CO-MEMBERSHIP: real>>function_only≈chance ⇒ pool-timing(co-membership), not just 'is-a-provider'
+
+[E3 — ROBUSTNESS ★ headline] which deployable defense closes it (acc→chance)?
+   jitter : [[1, np.float64(1.0), np.float64(0.0)], [5, np.float64(1.0), np.float64(0.0)], [15, np.float64(1.0), np.float64(0.0)]]
+   batch  : [[2, np.float64(1.0), np.float64(0.0)], [8, np.float64(0.836), np.float64(0.126)], [32, np.float64(1.0), np.float64(0.0)]]
+   cover  : [[1.0, np.float64(1.0), np.float64(0.0)], [4.0, np.float64(1.0), np.float64(0.0)], [16.0, np.float64(1.0), np.float64(0.0)]]
+   vpn    : [[0.25, np.float64(0.885), np.float64(0.051)], [0.5, np.float64(0.758), np.float64(0.073)], [1.0, np.float64(0.572), np.float64(0.056)]]
+   pad    : [[1.0, np.float64(0.5), np.float64(0.0)]]
+   -> jitter/cover weak (per-window count survives); pad (constant-cadence+fixed-size) closes it;
+      vpn closes it by removing per-DER resolution; batch closes only at large b.
+
+[E4 — ATTACKER COST ★ headline] #observed award-windows W → accuracy:
+   W=  1 windows : acc=0.500 ± 0.000
+   W=  2 windows : acc=0.744 ± 0.173
+   W=  4 windows : acc=0.932 ± 0.139
+   W=  8 windows : acc=1.000 ± 0.000
+   W= 16 windows : acc=1.000 ± 0.000
+   W= 32 windows : acc=1.000 ± 0.000
+   -> ~4 award-windows for acc≥0.9 (≈ that many regulation awards observed).
+
+[E5 — multi-pool separability]:
+   K=2 pools: acc=1.000±0.000 ari=1.00 (chance=0.500)
+   K=3 pools: acc=1.000±0.000 ari=1.00 (chance=0.333)
+   K=4 pools: acc=1.000±0.000 ari=1.00 (chance=0.250)
+
+[E6 — NEGATIVE CONTROL ★ anti-tautology] no pools (random per-DER schedules):
+   acc vs (meaningless) labels = 0.589±0.074 ≈ chance 0.500  -> clustering does NOT manufacture pool structure when none exists. ✓
+
+================================================================================
+HEADLINE (NOT 'signal exists' — that is E1/trivial):
+  • co-membership vs function: CO-MEMBERSHIP (E2: real 1.00±0.00 vs func 0.57±0.07 vs chance 0.50)
+  • closing defense: pad(constant-cadence+fixed-size) & vpn; jitter/cover/small-batch weak (E3)
+  • attacker cost: ~4 observed award-windows for acc≥0.9 (E4)
+  • negative control passes: no spurious structure (E6 0.59±0.07≈0.50)
+saved -> <repo>/pilot/results_countonly/pilot2_results.json

@@ -6,7 +6,7 @@ import json, os
 from pilot2i_metrics import analyze
 from pilot2e_boundary import gen_joint
 
-RES = os.path.join(os.path.dirname(__file__), "results")
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results")
 
 
 def main():

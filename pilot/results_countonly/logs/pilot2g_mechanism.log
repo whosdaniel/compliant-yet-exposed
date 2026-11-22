@@ -1,0 +1,15 @@
+== (A) temporal-shuffle (K=2, chance 0.50) ==
+  real (distinct windows)        acc=1.0±0.0
+  same-fraction (distinct set)   acc=1.0±0.0  <- same #active windows
+  window-shuffle (alignment off) acc=0.571±0.059  <- marginals kept, co-activity destroyed
+  -> survive same-fraction + collapse on shuffle => signal is temporal co-activity, not a scalar fingerprint.
+
+== (B) feature ablation (K=2, chance 0.50) ==
+  both (count+size)        acc=1.0±0.0
+  count-only               acc=1.0±0.0
+  size-only                acc=1.0±0.0
+  size-only (size equalized) acc=0.592±0.072  <- removing the size contrast
+  -> count-only already recovers; size-only collapses once the size contrast is removed
+     => the result is carried by timing/counts, not by the absolute byte sizes (Section 8.5).
+
+saved -> <repo>/pilot/results_countonly/pilot2g_mechanism.json

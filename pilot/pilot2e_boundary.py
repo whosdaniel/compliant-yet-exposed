@@ -28,7 +28,8 @@ from pilot2_command_channel import (
     _z, cluster, accuracy, gen, ci95,
 )
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+from pilot2_command_channel import observed_features  # amendment 1 feature switch
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 
 def gen_joint(corr=0.0, gamma=1.0, M=24, K=2, W=24, p_award=0.5, seed=0,
@@ -54,7 +55,7 @@ def gen_joint(corr=0.0, gamma=1.0, M=24, K=2, W=24, p_award=0.5, seed=0,
     size = np.where(active, sz_act, SZ_IDLE).astype(float)
     count = rng.poisson(np.clip(count, 1, None)).astype(float)
     size = size + rng.normal(0, np.where(active, SZ_ACT_SD, SZ_IDLE_SD))
-    feat = np.hstack([_z(count), _z(size)])
+    feat = observed_features(_z(count), _z(size))
     return feat, pools
 
 
@@ -75,8 +76,8 @@ def main():
         curve = []
         for g in gammas:
             m, sd = run_joint(K=K, gamma=g, M=max(24, 6 * K))
-            curve.append([g, round(m, 3), round(sd, 3)])
-        out["gamma_by_K"].append({"K": K, "chance": round(1.0 / K, 3), "curve": curve})
+            curve.append([g, round(m, 6), round(sd, 6)])
+        out["gamma_by_K"].append({"K": K, "chance": round(1.0 / K, 6), "curve": curve})
         print(f"  K={K} (chance {1.0/K:.2f}): " + " ".join(f"g{g}:{a}" for g, a, _ in curve))
 
     # cross-pool correlation at several (K, W) -- the knee moves to lower corr at small W
@@ -87,8 +88,8 @@ def main():
         curve = []
         for c in corrs:
             m, sd = run_joint(K=K, W=W, corr=c, M=max(24, 6 * K))
-            curve.append([c, round(m, 3), round(sd, 3)])
-        out["corr_by_W"].append({"K": K, "W": W, "chance": round(1.0 / K, 3), "curve": curve})
+            curve.append([c, round(m, 6), round(sd, 6)])
+        out["corr_by_W"].append({"K": K, "W": W, "chance": round(1.0 / K, 6), "curve": curve})
         print(f"  K={K} W={W} (chance {1.0/K:.2f}): " + " ".join(f"c{c}:{a}" for c, a, _ in curve))
 
     # joint operating points -- the knobs compounded, not varied one-at-a-time
@@ -105,7 +106,7 @@ def main():
     for name, kw in scen:
         m, sd = run_joint(**kw); ch = 1.0 / kw["K"]
         out["joint"].append({"label": name, **{k: kw[k] for k in ("corr", "gamma", "W", "K", "M")},
-                             "chance": round(ch, 3), "acc": round(m, 3), "sd": round(sd, 3)})
+                             "chance": round(ch, 6), "acc": round(m, 6), "sd": round(sd, 6)})
         print(f"  {name:<44} acc={m:.3f}±{sd:.3f} (chance {ch:.2f})")
 
     # negative-control floor as K grows (optimal-assignment baseline rises with K)
@@ -115,8 +116,8 @@ def main():
         accs = [accuracy(*(lambda fp: (fp[1], cluster(fp[0], K)))(gen(no_pools=True, K=K, seed=s, M=max(24, 6 * K))), K)
                 for s in range(SEEDS)]
         m, sd = float(np.mean(accs)), float(np.std(accs)); ch = 1.0 / K
-        out["e6_floor_by_K"].append({"K": K, "chance": round(ch, 3), "floor": round(m, 3),
-                                     "sd": round(sd, 3), "excess_over_chance": round(m - ch, 3)})
+        out["e6_floor_by_K"].append({"K": K, "chance": round(ch, 6), "floor": round(m, 6),
+                                     "sd": round(sd, 6), "excess_over_chance": round(m - ch, 6)})
         print(f"  K={K}: floor={m:.3f}±{sd:.3f} (chance {ch:.2f}, excess +{m-ch:.3f})")
 
     # count-channel saturation: shrink active/idle count contrast (best case otherwise)
@@ -124,7 +125,7 @@ def main():
     print("== noise_stress (shrink active/idle count contrast; K2 W24 gamma1 corr0) ==")
     for la in (900, 480, 300, 200, 150):
         m, sd = run_joint(corr=0.0, gamma=1.0, W=24, K=2, lam_act=float(la))
-        out["noise_stress"].append([la, round(la / 120.0, 2), round(m, 3), round(sd, 3)])
+        out["noise_stress"].append([la, round(la / 120.0, 6), round(m, 6), round(sd, 6)])
         print(f"  lam_act={la:>4} (ratio {la/120:.1f}x): acc={m:.3f}±{sd:.3f}")
 
     json.dump(out, open(os.path.join(RES, "pilot2e_boundary.json"), "w"), indent=2)

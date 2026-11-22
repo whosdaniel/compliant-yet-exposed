@@ -1,0 +1,17 @@
+== E2 controls (ARI) ==
+  real             acc=1.000 ari=1.000 f1=1.000
+  function_only    acc=0.569 ari=0.001 f1=0.520
+  random_label     acc=0.582 ari=0.005 f1=0.481
+  no_structure     acc=0.589 ari=0.013 f1=0.498
+== defenses (ARI; pad/vpn should close to ~0, jitter/cover stay high) ==
+  jitter   acc=1.000 ari=1.000
+  batch    acc=1.000 ari=1.000
+  cover    acc=1.000 ari=1.000
+  pad      acc=0.500 ari=0.000
+  vpn      acc=0.572 ari=-0.007
+== c-sweep multi-W (ARI) ==
+  W=24: c0.0:1.0 c0.5:1.0 c0.9:0.979 c0.99:0.68 c1.0:-0.003
+  W= 8: c0.0:1.0 c0.5:0.96 c0.9:0.775 c0.99:0.221 c1.0:-0.005
+  W= 4: c0.0:0.819 c0.5:0.648 c0.9:0.431 c0.99:0.097 c1.0:-0.003
+
+saved -> <repo>/pilot/results_countonly/pilot2o_fig_ari.json

@@ -14,6 +14,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from figstyle import apply, ACC, TEAL, RED, MUT, INK
 apply()
+plt.rcParams["pdf.fonttype"] = 42   # embed TrueType fonts in the vector PDF
 
 HERE = os.path.dirname(__file__)
 DATA = os.path.join(HERE, "..", "pilot", "results", "pilot2q_defense_factorial.json")
@@ -40,8 +41,8 @@ def null_band(model):
 
 
 fig, axes = plt.subplots(2, 1, figsize=(7.2, 6.8), sharex=True)
-titles = {"downlink": "(a) Downlink command channel (primary) — cadence alone closes it",
-          "bidir": "(b) Bidirectional envelope — cadence-only leaves the size channel"}
+titles = {"downlink": "(a) Downlink command channel (primary): cadence alone closes it",
+          "bidir": "(b) Bidirectional envelope: cadence-only leaves the size channel"}
 x = np.arange(len(DEFS)); w = 0.26
 for ax, model in zip(axes, ["downlink", "bidir"]):
     nb = null_band(model)
@@ -62,5 +63,5 @@ for ax, model in zip(axes, ["downlink", "bidir"]):
 axes[1].set_xticks(x); axes[1].set_xticklabels([DEF_LABEL[dn] for dn in DEFS])
 axes[0].legend(loc="upper right", ncol=1, fontsize=10, handlelength=1.6, borderaxespad=0.5)
 fig.tight_layout(h_pad=1.6)
-fig.savefig(OUT)
+fig.savefig(OUT); fig.savefig(OUT[:-4] + ".pdf")   # PNG for the build, vector PDF for submission
 print("wrote", OUT)

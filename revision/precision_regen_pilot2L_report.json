@@ -1,0 +1,10 @@
+{
+  "overall": "PASS",
+  "note": "pilot2L_direction.py shares the ARI and permutation-null routine of pilot2i_metrics.py, whose stored decimals rose from four to six in the precision regeneration; its result file is regenerated the same way: same code, seeds, and grids, every new value inside the rounding interval of the stored value.",
+  "files": {
+    "results/pilot2L_direction.json": {
+      "outside_interval": 0,
+      "examples": []
+    }
+  }
+}

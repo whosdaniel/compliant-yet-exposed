@@ -9,10 +9,10 @@
     "msgs": 26,
     "wire_bytes": 5948
   },
-  "captured_wire_chunks": 38,
+  "captured_wire_chunks": 37,
   "captured_bytes_c2s": 6755,
   "captured_bytes_s2c": 2300,
-  "capture_span_s": 97.82,
+  "capture_span_s": 97.87,
   "cadence_modeled": {
     "setpoint_period_s": 4.0,
     "idle_poll_period_s": 15.0,

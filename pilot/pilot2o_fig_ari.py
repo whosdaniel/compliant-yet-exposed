@@ -9,7 +9,7 @@ from pilot2_command_channel import gen, cluster, accuracy, SEEDS
 from pilot2i_metrics import ari, pairwise_prf
 from pilot2e_boundary import gen_joint
 
-RES = os.path.join(os.path.dirname(__file__), "results")
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results")
 
 
 def curve(gen_fn, K, permute_label=False):
@@ -19,8 +19,8 @@ def curve(gen_fn, K, permute_label=False):
         pred = cluster(feat, K)
         tgt = np.random.default_rng(900 + s).permutation(true) if permute_label else true
         a.append(accuracy(tgt, pred, K)); r.append(ari(tgt, pred)); f.append(pairwise_prf(tgt, pred)[2])
-    return {"acc": round(float(np.mean(a)), 3), "ari": round(float(np.mean(r)), 3),
-            "ari_sd": round(float(np.std(r)), 3), "f1": round(float(np.mean(f)), 3)}
+    return {"acc": round(float(np.mean(a)), 6), "ari": round(float(np.mean(r)), 6),
+            "ari_sd": round(float(np.std(r)), 6), "f1": round(float(np.mean(f)), 6)}
 
 
 def main():

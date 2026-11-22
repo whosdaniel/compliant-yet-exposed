@@ -1,0 +1,182 @@
+[
+ {
+  "both": 1.0,
+  "count_only": 1.0,
+  "both_silK": 1.0,
+  "count_only_silK": 1.0,
+  "point": "headline corr0 g1 W24 K2",
+  "diff_oracle": 0.0
+ },
+ {
+  "both": 1.0,
+  "count_only": 1.0,
+  "both_silK": 1.0,
+  "count_only_silK": 1.0,
+  "point": "corr sweep c=0.5 W24 K2",
+  "diff_oracle": 0.0
+ },
+ {
+  "both": 0.9792,
+  "count_only": 0.9793,
+  "both_silK": 0.9795,
+  "count_only_silK": 0.9793,
+  "point": "corr sweep c=0.9 W24 K2",
+  "diff_oracle": 0.0001
+ },
+ {
+  "both": 0.68,
+  "count_only": 0.6804,
+  "both_silK": 0.6743,
+  "count_only_silK": 0.6764,
+  "point": "corr sweep c=0.99 W24 K2",
+  "diff_oracle": 0.0004
+ },
+ {
+  "both": -0.0079,
+  "count_only": -0.0025,
+  "both_silK": -0.0089,
+  "count_only_silK": -0.0084,
+  "point": "corr sweep c=1.0 W24 K2",
+  "diff_oracle": 0.0054
+ },
+ {
+  "both": 0.9672,
+  "count_only": 0.9736,
+  "both_silK": 0.9672,
+  "count_only_silK": 0.9736,
+  "point": "gamma sweep g=0.75 K2",
+  "diff_oracle": 0.0064
+ },
+ {
+  "both": 0.9176,
+  "count_only": 0.9285,
+  "both_silK": 0.9023,
+  "count_only_silK": 0.9095,
+  "point": "gamma sweep g=0.75 K5",
+  "diff_oracle": 0.0109
+ },
+ {
+  "both": 0.6135,
+  "count_only": 0.6562,
+  "both_silK": 0.5471,
+  "count_only_silK": 0.57,
+  "point": "gamma sweep g=0.5 K2",
+  "diff_oracle": 0.0427
+ },
+ {
+  "both": 0.3706,
+  "count_only": 0.3764,
+  "both_silK": 0.2892,
+  "count_only_silK": 0.315,
+  "point": "gamma sweep g=0.5 K5",
+  "diff_oracle": 0.0058
+ },
+ {
+  "both": 0.0893,
+  "count_only": 0.0982,
+  "both_silK": 0.0426,
+  "count_only_silK": 0.0376,
+  "point": "gamma sweep g=0.25 K2",
+  "diff_oracle": 0.0089
+ },
+ {
+  "both": 0.0751,
+  "count_only": 0.0652,
+  "both_silK": 0.0508,
+  "count_only_silK": 0.0474,
+  "point": "gamma sweep g=0.25 K5",
+  "diff_oracle": -0.0099
+ },
+ {
+  "both": 0.7321,
+  "count_only": 0.7691,
+  "both_silK": 0.698,
+  "count_only_silK": 0.6647,
+  "point": "mild K2 (c.5 g.75 W16)",
+  "diff_oracle": 0.037
+ },
+ {
+  "both": 0.5942,
+  "count_only": 0.6097,
+  "both_silK": 0.4671,
+  "count_only_silK": 0.4605,
+  "point": "mild K5 (c.5 g.75 W16)",
+  "diff_oracle": 0.0155
+ },
+ {
+  "both": 0.1002,
+  "count_only": 0.096,
+  "both_silK": 0.0751,
+  "count_only_silK": 0.0659,
+  "point": "SoC stress (c.5 g.5 W8 K5)",
+  "diff_oracle": -0.0042
+ },
+ {
+  "both": 0.086,
+  "count_only": 0.078,
+  "both_silK": 0.0717,
+  "count_only_silK": 0.0692,
+  "point": "pessimistic (c.75 g.5 W4 K5)",
+  "diff_oracle": -0.008
+ },
+ {
+  "both": 0.1002,
+  "count_only": 0.096,
+  "point": "stressed budget W=8 (c.5 g.5 K5)",
+  "diff_oracle": -0.0042
+ },
+ {
+  "both": 0.1784,
+  "count_only": 0.1788,
+  "point": "stressed budget W=16 (c.5 g.5 K5)",
+  "diff_oracle": 0.0004
+ },
+ {
+  "both": 0.3078,
+  "count_only": 0.3159,
+  "point": "stressed budget W=32 (c.5 g.5 K5)",
+  "diff_oracle": 0.0081
+ },
+ {
+  "both": 0.5112,
+  "count_only": 0.5448,
+  "point": "stressed budget W=64 (c.5 g.5 K5)",
+  "diff_oracle": 0.0336
+ },
+ {
+  "both": 0.8195,
+  "count_only": 0.8238,
+  "point": "stressed budget W=128 (c.5 g.5 K5)",
+  "diff_oracle": 0.0043
+ },
+ {
+  "both": 0.4334,
+  "count_only": 0.3378,
+  "point": "E4 cost corner W=2 K2 (gen)",
+  "diff_oracle": -0.0956
+ },
+ {
+  "both": 0.8409,
+  "count_only": 0.8193,
+  "point": "E4 cost corner W=4 K2 (gen)",
+  "diff_oracle": -0.0216
+ },
+ {
+  "both": 1.0,
+  "count_only": 1.0,
+  "point": "E4 cost corner W=8 K2 (gen)",
+  "diff_oracle": 0.0
+ },
+ {
+  "both": 1.0,
+  "count_only": 1.0,
+  "point": "E2 real (gen) K2 W24",
+  "diff_oracle": 0.0
+ },
+ {
+  "both": 0.0133,
+  "count_only": 0.0128,
+  "point": "E6 no pools (gen) K2",
+  "diff_oracle": -0.0005
+ }
+]

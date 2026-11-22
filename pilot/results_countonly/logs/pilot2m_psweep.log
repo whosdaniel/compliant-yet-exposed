@@ -1,0 +1,15 @@
+  p=0.05 K=2                               acc=0.931 ari=0.835 f1=0.919 | null_acc97.5=0.728 ari97.5=0.177 | p_ari~0.005 sigfrac=0.84
+  p=0.05 K=5                               acc=0.851 ari=0.744 f1=0.790 | null_acc97.5=0.483 ari97.5=0.106 | p_ari~0.005 sigfrac=0.98
+  p=0.1 K=2                                acc=0.993 ari=0.981 f1=0.990 | null_acc97.5=0.734 ari97.5=0.188 | p_ari~0.005 sigfrac=0.98
+  p=0.1 K=5                                acc=0.970 ari=0.950 f1=0.959 | null_acc97.5=0.489 ari97.5=0.108 | p_ari~0.005 sigfrac=1.00
+  p=0.25 K=2                               acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  p=0.25 K=5                               acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.487 ari97.5=0.106 | p_ari~0.005 sigfrac=1.00
+  p=0.5 K=2                                acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  p=0.5 K=5                                acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.487 ari97.5=0.106 | p_ari~0.005 sigfrac=1.00
+  p=0.75 K=2                               acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  p=0.75 K=5                               acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.487 ari97.5=0.106 | p_ari~0.005 sigfrac=1.00
+  p=0.9 K=2                                acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  p=0.9 K=5                                acc=0.990 ari=0.979 f1=0.983 | null_acc97.5=0.487 ari97.5=0.106 | p_ari~0.005 sigfrac=1.00
+
+saved -> <repo>/pilot/results_countonly/pilot2m_psweep.json
+-> if ARI peaks near p=0.5 and falls at low/high p, duty cycle (A4) is a favorable condition.

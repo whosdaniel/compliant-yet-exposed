@@ -1,0 +1,14 @@
+lines=10440 expected_tasks=10440 unique=10440 dups=0 missing=0 extra=0
+M=  192 K= 2 W=24 adverse   seed= 4 stored=(0.83944,0.83944,2) rerun=(0.83944,0.83944,2) OK
+M=   48 K= 4 W= 6 favorable seed=15 stored=(1.0,1.0,4) rerun=(1.0,1.0,4) OK
+M=   96 K=16 W=48 favorable seed= 1 stored=(1.0,1.0,16) rerun=(1.0,1.0,16) OK
+M=  192 K=16 W=48 favorable seed= 4 stored=(1.0,1.0,16) rerun=(1.0,1.0,16) OK
+M=  192 K=16 W=12 adverse   seed=13 stored=(0.13798,0.04865,89) rerun=(0.13798,0.04865,89) OK
+M= 1536 K=16 W=24 favorable seed=10 stored=(1.0,1.0,16) rerun=(1.0,1.0,16) OK
+M=   96 K= 4 W=12 favorable seed=18 stored=(1.0,1.0,4) rerun=(1.0,1.0,4) OK
+M=  384 K= 2 W=48 favorable seed= 5 stored=(1.0,1.0,2) rerun=(1.0,1.0,2) OK
+M=   24 K= 8 W= 6 adverse   seed= 3 stored=(0.0325,0.03823,12) rerun=(0.0325,0.03823,12) OK
+M=   24 K= 8 W=12 favorable seed= 9 stored=(1.0,1.0,8) rerun=(1.0,1.0,8) OK
+M=12288 K=64 W= 6 adverse   seed= 2 stored=(0.04818,0.04826,71) rerun=(0.04818,0.04826,71) OK
+M=12288 K=32 W=12 adverse   seed= 5 stored=(0.07066,0.05943,96) rerun=(0.07066,0.05943,96) OK
+determinism: ALL MATCH

@@ -1,0 +1,14 @@
+== (C) emergent AGC disaggregation (SoC-equalizing split; per-DER cadence is EMERGENT, not hand-set) ==
+   battery-duration robustness check (homogeneous members):
+   e_cap(h) within-corr  cross-corr active-frac  recovery(chance 0.50)
+        4.0       0.842       0.009       0.698            1.0 +/- 0.0
+        1.0       0.886       0.009       0.703            1.0 +/- 0.0
+       0.25       0.952       0.011       0.697            1.0 +/- 0.0
+  -> Within a pool, members serve the SAME disaggregated AGC trajectory, so their per-DER command
+     cadence is highly correlated (shared cadence is EMERGENT, not assumed); across pools it is not.
+     The attack recovers co-membership (1.0) from these emergent streams.
+  -> HONEST CORRECTION (sim refuted the naive intuition): SoC saturation under an equalizing split is
+     SHARED across co-members, so synchronized dropout keeps within-pool sync HIGH (supports gamma high
+     for genuine co-members). gamma<1 comes from member heterogeneity (capacity, staggered membership),
+     not from SoC dropout per se.
+saved -> <repo>/pilot/results_countonly/pilot2h_disaggregation.json

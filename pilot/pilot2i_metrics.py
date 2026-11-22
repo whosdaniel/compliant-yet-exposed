@@ -21,7 +21,7 @@ import numpy as np
 from pilot2_command_channel import cluster, accuracy, gen, SEEDS
 from pilot2e_boundary import gen_joint
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 NPERM = 200
 
 
@@ -84,16 +84,16 @@ def analyze(gen_fn, K, label):
         p_acc.append((np.sum(na >= oa) + 1) / (NPERM + 1))
         p_ari.append((np.sum(nr >= orr) + 1) / (NPERM + 1))
 
-    def ms(x): return [round(float(np.mean(x)), 4), round(float(np.std(x)), 4)]
+    def ms(x): return [round(float(np.mean(x)), 6), round(float(np.std(x)), 6)]
     res = {
         "label": label, "K": K,
         "acc": ms(obs_acc), "ari": ms(obs_ari), "pairwise_f1": ms(obs_f1),
-        "null_acc_p975_mean": round(float(np.mean(null_acc95)), 4),
-        "null_ari_p975_mean": round(float(np.mean(null_ari95)), 4),
-        "p_acc_median": round(float(np.median(p_acc)), 4),
-        "p_ari_median": round(float(np.median(p_ari)), 4),
-        "frac_sig_acc_p05": round(float(np.mean(np.array(p_acc) < 0.05)), 3),
-        "frac_sig_ari_p05": round(float(np.mean(np.array(p_ari) < 0.05)), 3),
+        "null_acc_p975_mean": round(float(np.mean(null_acc95)), 6),
+        "null_ari_p975_mean": round(float(np.mean(null_ari95)), 6),
+        "p_acc_median": round(float(np.median(p_acc)), 6),
+        "p_ari_median": round(float(np.median(p_ari)), 6),
+        "frac_sig_acc_p05": round(float(np.mean(np.array(p_acc) < 0.05)), 6),
+        "frac_sig_ari_p05": round(float(np.mean(np.array(p_ari) < 0.05)), 6),
     }
     print(f"  {label:<40} acc={res['acc'][0]:.3f} ari={res['ari'][0]:.3f} f1={res['pairwise_f1'][0]:.3f} "
           f"| null_acc97.5={res['null_acc_p975_mean']:.3f} ari97.5={res['null_ari_p975_mean']:.3f} "

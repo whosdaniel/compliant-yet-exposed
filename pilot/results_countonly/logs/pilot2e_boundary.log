@@ -1,0 +1,32 @@
+== gamma_by_K (within-pool homogeneity; corr=0) ==
+  K=2 (chance 0.50): g1.0:1.0 g0.9:1.0 g0.75:0.993 g0.5:0.902 g0.25:0.65 g0.0:0.567
+  K=3 (chance 0.33): g1.0:1.0 g0.9:1.0 g0.75:0.984 g0.5:0.796 g0.25:0.513 g0.0:0.46
+  K=5 (chance 0.20): g1.0:1.0 g0.9:1.0 g0.75:0.972 g0.5:0.664 g0.25:0.435 g0.0:0.391
+== corr_by_W (cross-pool award correlation; gamma=1) ==
+  K=2 W=24 (chance 0.50): c0.0:1.0 c0.5:1.0 c0.75:0.991 c0.9:0.991 c0.95:0.954 c0.99:0.864 c1.0:0.57
+  K=2 W=8 (chance 0.50): c0.0:1.0 c0.5:0.983 c0.75:0.983 c0.9:0.9 c0.95:0.838 c0.99:0.669 c1.0:0.566
+  K=2 W=4 (chance 0.50): c0.0:0.941 c0.5:0.868 c0.75:0.831 c0.9:0.765 c0.95:0.707 c0.99:0.615 c1.0:0.573
+  K=5 W=24 (chance 0.20): c0.0:1.0 c0.5:1.0 c0.75:0.996 c0.9:0.969 c0.95:0.903 c0.99:0.692 c1.0:0.393
+  K=5 W=8 (chance 0.20): c0.0:0.993 c0.5:0.942 c0.75:0.873 c0.9:0.715 c0.95:0.633 c0.99:0.483 c1.0:0.376
+== joint operating points (compounded knobs) ==
+  headline (corr0, gamma1, W24, K2)            acc=1.000±0.000 (chance 0.50)
+  mild (corr0.5, gamma0.75, W16, K2)           acc=0.938±0.051 (chance 0.50)
+  mild K5 (corr0.5, gamma0.75, W16, K5)        acc=0.807±0.103 (chance 0.20)
+  SOC-budget (corr0.5, gamma0.5, W8, K5)       acc=0.447±0.058 (chance 0.20)
+  battery-real (corr0.75, gamma0.5, W8, K5)    acc=0.437±0.055 (chance 0.20)
+  pessimistic (corr0.75, gamma0.5, W4, K5)     acc=0.437±0.072 (chance 0.20)
+== e6_floor_by_K (no-structure negative control; optimal-assignment floor) ==
+  K=2: floor=0.589±0.074 (chance 0.50, excess +0.089)
+  K=3: floor=0.463±0.061 (chance 0.33, excess +0.129)
+  K=5: floor=0.392±0.050 (chance 0.20, excess +0.192)
+  K=8: floor=0.326±0.027 (chance 0.12, excess +0.201)
+== noise_stress (shrink active/idle count contrast; K2 W24 gamma1 corr0) ==
+  lam_act= 900 (ratio 7.5x): acc=1.000±0.000
+  lam_act= 480 (ratio 4.0x): acc=1.000±0.000
+  lam_act= 300 (ratio 2.5x): acc=1.000±0.000
+  lam_act= 200 (ratio 1.7x): acc=1.000±0.000
+  lam_act= 150 (ratio 1.2x): acc=0.998±0.008
+
+saved -> <repo>/pilot/results_countonly/pilot2e_boundary.json
+-> magnitude is a BOUNDARY: near-perfect only at the favorable corner; cost scales steeply
+   with within-pool heterogeneity, pool count, observation budget, and award correlation.

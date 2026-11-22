@@ -1,0 +1,16 @@
+========================================================================
+PILOT 2d — within-pool schedule heterogeneity. chance = 0.5
+Monte-Carlo: mean +/- SD over 50 seeds. gamma=1 homogeneous .. 0 independent.
+========================================================================
+ gamma     acc     ±sd   ±ci95
+  1.00   1.000   0.000   0.000
+  0.90   0.999   0.006   0.002
+  0.75   0.989   0.020   0.006
+  0.50   0.877   0.082   0.023
+  0.25   0.641   0.095   0.026
+  0.00   0.586   0.073   0.020
+
+-> recovery degrades smoothly from the homogeneous endpoint (gamma=1) toward chance
+   (gamma=0). The headline 1.00 is therefore the clean endpoint of a real curve, and the
+   gamma=0 case is an independent negative control: no pool-aligned signal -> chance.
+saved -> <repo>/pilot/results_countonly/pilot2d_within_pool.json

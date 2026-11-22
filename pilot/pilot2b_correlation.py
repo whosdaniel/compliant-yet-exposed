@@ -27,7 +27,8 @@ from pilot2_command_channel import (
     _z, cluster, accuracy, ci95,
 )
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+from pilot2_command_channel import observed_features  # amendment 1 feature switch
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 
 def gen_corr(corr, M=24, K=2, W=24, p_award=0.5, seed=0):
@@ -50,7 +51,7 @@ def gen_corr(corr, M=24, K=2, W=24, p_award=0.5, seed=0):
     size = np.where(active, SZ_ACT, SZ_IDLE).astype(float)
     count = rng.poisson(np.clip(count, 1, None)).astype(float)            # sampling noise
     size = size + rng.normal(0, np.where(active, SZ_ACT_SD, SZ_IDLE_SD))
-    feat = np.hstack([_z(count), _z(size)])
+    feat = observed_features(_z(count), _z(size))
     return feat, pools
 
 
@@ -70,7 +71,7 @@ def main():
             pred = cluster(feat, K)
             accs.append(accuracy(pools, pred, K))
         m, sd = float(np.mean(accs)), float(np.std(accs))
-        out.append([cr, round(m, 3), round(sd, 3)])
+        out.append([cr, round(m, 6), round(sd, 6)])
         print(f"{cr:>6.2f} {m:>7.3f} {sd:>7.3f} {ci95(sd):>7.3f}")
     json.dump(out, open(os.path.join(RES, "pilot2b_correlation.json"), "w"), indent=2)
     print("\n-> co-membership accuracy decays to chance as cross-pool award timing correlates.")

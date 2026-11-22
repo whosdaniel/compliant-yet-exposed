@@ -7,3 +7,5 @@ env/
 .DS_Store
 *.egg-info/
 .ipynb_checkpoints/
+.check/
+figures/figs/*.pdf

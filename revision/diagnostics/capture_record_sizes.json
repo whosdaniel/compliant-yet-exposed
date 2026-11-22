@@ -1,0 +1,32 @@
+{
+  "pcap": "pilot/results/real_socket_capture.pcap",
+  "handshake_records_c2s": 3,
+  "phases": {
+    "idle": {
+      "records": 3,
+      "wire_bytes": 210,
+      "mean_wire_bytes": 70.0,
+      "sizes": [
+        70
+      ],
+      "first_s": 0.0,
+      "last_s": 30.33,
+      "matches_stored_summary": true
+    },
+    "active": {
+      "records": 26,
+      "wire_bytes": 5948,
+      "mean_wire_bytes": 228.76923076923077,
+      "sizes": [
+        34,
+        143,
+        341,
+        1305
+      ],
+      "first_s": 45.49,
+      "last_s": 93.41,
+      "matches_stored_summary": true
+    }
+  },
+  "all_match": true
+}

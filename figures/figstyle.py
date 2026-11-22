@@ -1,5 +1,5 @@
-"""figstyle.py: shared clean-minimal design system for the data figures (matches
-the paper's Times body font). Import and call apply() at the top of a figure script."""
+"""figstyle.py — shared clean-minimal design system for the data figures (matches the SVG diagrams
+and the paper's Times body font). Import and call apply() at the top of a figure script."""
 import matplotlib as mpl
 
 # achromatic / journal palette (no hue). Ordered shade ramp for grouped bars:
@@ -22,7 +22,7 @@ def apply():
         "xtick.labelsize": 11, "ytick.labelsize": 11,
         "xtick.major.size": 4, "ytick.major.size": 4, "xtick.major.width": 0.8, "ytick.major.width": 0.8,
         "legend.frameon": False, "legend.fontsize": 10.5, "legend.handlelength": 1.8,
-        "figure.dpi": 300, "savefig.dpi": 300, "savefig.bbox": "tight", "savefig.pad_inches": 0.12,
+        "figure.dpi": 600, "savefig.dpi": 600, "savefig.bbox": "tight", "savefig.pad_inches": 0.12,
         "lines.linewidth": 2.0, "lines.markersize": 6, "lines.markeredgewidth": 0.9,
         "lines.markeredgecolor": "white",
     })

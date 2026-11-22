@@ -1,0 +1,13 @@
+== pilot2i: chance-adjusted (ARI) + pairwise-F1 + permutation null (50 seeds, 200 perms) ==
+  headline (corr0, g1, W24, K2)            acc=1.000 ari=1.000 f1=1.000 | null_acc97.5=0.735 ari97.5=0.190 | p_ari~0.005 sigfrac=1.00
+  mild K2 (corr0.5, g0.75, W16, K2)        acc=0.938 ari=0.769 f1=0.881 | null_acc97.5=0.717 ari97.5=0.155 | p_ari~0.005 sigfrac=1.00
+  mild K5 (corr0.5, g0.75, W16, K5)        acc=0.807 ari=0.610 f1=0.682 | null_acc97.5=0.481 ari97.5=0.108 | p_ari~0.005 sigfrac=1.00
+  SOC-budget (corr0.5, g0.5, W8, K5)       acc=0.447 ari=0.096 f1=0.264 | null_acc97.5=0.476 ari97.5=0.104 | p_ari~0.060 sigfrac=0.50
+  battery (corr0.75, g0.5, W8, K5)         acc=0.437 ari=0.074 f1=0.245 | null_acc97.5=0.475 ari97.5=0.103 | p_ari~0.107 sigfrac=0.34
+  pessimistic (corr0.75,g0.5,W4,K5)        acc=0.437 ari=0.078 f1=0.248 | null_acc97.5=0.478 ari97.5=0.106 | p_ari~0.167 sigfrac=0.34
+  E6 no-structure K2                       acc=0.589 ari=0.013 f1=0.498 | null_acc97.5=0.719 ari97.5=0.161 | p_ari~0.719 sigfrac=0.06
+  E6 no-structure K5                       acc=0.392 ari=0.009 f1=0.191 | null_acc97.5=0.477 ari97.5=0.105 | p_ari~0.470 sigfrac=0.08
+
+saved -> <repo>/pilot/results_countonly/pilot2i_metrics.json
+-> ARI is chance-adjusted (~0 under null for any K); pairwise-F1 = the co-membership target;
+   permutation p/null make 'above chance' honest vs the same-N,K floor (not 1/K).

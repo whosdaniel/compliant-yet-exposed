@@ -13,7 +13,8 @@ from scipy.stats import norm
 from pilot2_command_channel import _z, cluster, accuracy, SEEDS
 from pilot2i_metrics import ari as _ari, pairwise_prf as _prf, perm_null as _perm
 
-RES = os.path.join(os.path.dirname(__file__), "results")
+from pilot2_command_channel import observed_features  # amendment 1 feature switch
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results")
 NPERM = 200
 
 
@@ -47,7 +48,7 @@ def gen_drift(mode, K=5, M=30, W=128, p=0.5, corr=0.5, gamma=0.5, churn_rate=0.0
             active[i, w] = base if (rng.random() < gw) else (rng.random() < pw)
     count = rng.poisson(np.clip(np.where(active, 900.0, 120.0), 1, None)).astype(float)
     size = np.where(active, 34.0, 300.0) + rng.normal(0, np.where(active, 4.0, 60.0))
-    return np.hstack([_z(count), _z(size)]), pools_true
+    return observed_features(_z(count), _z(size)), pools_true
 
 
 def analyze_drift(mode, W, K=5, M=30):
@@ -61,9 +62,9 @@ def analyze_drift(mode, W, K=5, M=30):
         pv = (np.sum(nr >= orr[-1]) + 1) / (NPERM + 1)
         p_ari.append(pv); sig.append(pv < 0.05)
     import numpy as _np
-    return {"mode": mode, "W": W, "acc": round(float(_np.mean(oa)), 3),
-            "ari": round(float(_np.mean(orr)), 3), "f1": round(float(_np.mean(of)), 3),
-            "frac_sig": round(float(_np.mean(sig)), 2)}
+    return {"mode": mode, "W": W, "acc": round(float(_np.mean(oa)), 6),
+            "ari": round(float(_np.mean(orr)), 6), "f1": round(float(_np.mean(of)), 6),
+            "frac_sig": round(float(_np.mean(sig)), 6)}
 
 
 def main():

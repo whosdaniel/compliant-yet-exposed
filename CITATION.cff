@@ -7,8 +7,8 @@ authors:
     given-names: Woowi
 license: MIT
 repository-code: "https://github.com/whosdaniel/compliant-yet-exposed"
-version: 1.0.1
-date-released: 2026-07-14
+version: 1.1.0
+date-released: 2026-11-22
 doi: 10.5281/zenodo.20785008
 identifiers:
   - type: doi

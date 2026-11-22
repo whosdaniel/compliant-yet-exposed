@@ -1,0 +1,11 @@
+== W-sweep at stress (corr 0.5, gamma 0.5, K=5): does patience rescue recovery? ==
+  stress W=4                               acc=0.446 ari=0.081 f1=0.250 | null_acc97.5=0.475 ari97.5=0.103 | p_ari~0.132 sigfrac=0.40
+  stress W=8                               acc=0.447 ari=0.096 f1=0.264 | null_acc97.5=0.476 ari97.5=0.104 | p_ari~0.060 sigfrac=0.50
+  stress W=16                              acc=0.519 ari=0.179 f1=0.331 | null_acc97.5=0.477 ari97.5=0.104 | p_ari~0.005 sigfrac=0.86
+  stress W=32                              acc=0.617 ari=0.316 f1=0.441 | null_acc97.5=0.481 ari97.5=0.106 | p_ari~0.005 sigfrac=0.96
+  stress W=64                              acc=0.769 ari=0.545 f1=0.628 | null_acc97.5=0.482 ari97.5=0.108 | p_ari~0.005 sigfrac=1.00
+  stress W=128                             acc=0.923 ari=0.824 f1=0.855 | null_acc97.5=0.485 ari97.5=0.106 | p_ari~0.005 sigfrac=1.00
+
+saved -> <repo>/pilot/results_countonly/pilot2j_wsweep.json
+-> if ARI climbs with W, the low-and-slow attack survives; if it stays ~0.1, the
+   compounded-stress regime is genuinely weak regardless of observation budget.

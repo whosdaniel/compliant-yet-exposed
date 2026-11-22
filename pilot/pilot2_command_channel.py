@@ -25,7 +25,7 @@ from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import squareform, pdist
 from scipy.optimize import linear_sum_assignment
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 # --- REAL-MEASURED channel params (sizes = real TLS-encrypted wire bytes, real_tls_measure.py) ---
 # TLS1.3 AES-256-GCM record overhead = 22 B [MEASURED, ssl MemoryBIO]; Modbus write ADU = 12 B [spec].
@@ -80,8 +80,19 @@ def gen(M=24, K=2, W=24, p_award=0.5, seed=0, same_windows=False, no_pools=False
         count[masked] = rng.poisson((LAM_ACT + LAM_IDLE) / 2, size=(masked.sum(), W))
         size[masked] = (SZ_ACT + SZ_IDLE) / 2 + rng.normal(0, 30, size=(masked.sum(), W))
     # observer features: z-normalized count + size across windows
-    feat = np.hstack([_z(count), _z(size)])
+    feat = observed_features(_z(count), _z(size))
     return feat, pools
+
+
+# Observer features (CN revision, amendment 1). "count": the downlink-only observer sees the per-window record count;
+# "count+size": the bidirectional observer also sees the mean record size (the original pipeline).
+FEATURES = os.environ.get("CYE_FEATURES", "count+size")
+if FEATURES not in ("count", "count+size"):
+    raise SystemExit(f"CYE_FEATURES must be 'count' or 'count+size', not {FEATURES!r}")
+
+
+def observed_features(count_z, size_z):
+    return count_z if FEATURES == "count" else np.hstack([count_z, size_z])
 
 
 def _z(x):
@@ -170,7 +181,7 @@ def main():
         row = []
         for p in params:
             a, sd, _ = trial(W=24, defense=dfn, dparam=p)
-            row.append([p, round(a, 3), round(sd, 3)])
+            row.append([p, round(a, 6), round(sd, 6)])
         rob[dfn] = row
         print(f"   {dfn:7s}: {row}")
     out["E3_robustness"] = rob
@@ -182,7 +193,7 @@ def main():
     cost = []
     for W in (1, 2, 4, 8, 16, 32):
         a, sd, _ = trial(W=W)
-        cost.append([W, round(a, 3), round(sd, 3)])
+        cost.append([W, round(a, 6), round(sd, 6)])
         print(f"   W={W:3d} windows : acc={a:.3f} ± {sd:.3f}")
     out["E4_attacker_cost"] = cost
     wmin = next((W for W, a, _ in cost if a >= 0.9), None)
@@ -193,7 +204,7 @@ def main():
     e5 = []
     for k in (2, 3, 4):
         a, sd, ar = trial(K=k, W=32)
-        e5.append([k, round(a, 3), round(sd, 3), round(ar, 2), round(1.0 / k, 3)])
+        e5.append([k, round(a, 6), round(sd, 6), round(ar, 6), round(1.0 / k, 6)])
         print(f"   K={k} pools: acc={a:.3f}±{sd:.3f} ari={ar:.2f} (chance={1.0/k:.3f})")
     out["E5_multi_pool"] = e5
 

@@ -27,7 +27,8 @@ from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import pdist
 from pilot2_command_channel import LAM_IDLE, SZ_ACT, SZ_IDLE, SZ_ACT_SD, SZ_IDLE_SD, SEEDS, _z, accuracy
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+from pilot2_command_channel import observed_features  # amendment 1 feature switch
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 
 def serve_window(soc, e_cap, n_tick, rng, window_hours=1.0):
@@ -73,7 +74,7 @@ def gen_emergent(M=24, K=2, W=24, p_award=0.5, n_tick=20, e_cap=4.0, seed=0):
             per_tick[(k, w)] = cmat
     cnt = rng.poisson(np.clip(cnt, 1, None)).astype(float)
     siz = siz + rng.normal(0, np.where(siz < 150, SZ_ACT_SD, SZ_IDLE_SD))
-    feat = np.hstack([_z(cnt), _z(siz)])
+    feat = observed_features(_z(cnt), _z(siz))
     return feat, pools, per_tick
 
 
@@ -108,15 +109,15 @@ def run_ecap(e_cap, K=2, W=24, n_tick=20):
         active_frac.append(float(np.mean(fr)) if fr else 0.0)
     return {
         "e_cap_hours": e_cap,
-        "recovery_acc": [round(float(np.mean(accs)), 3), round(float(np.std(accs)), 3)],
-        "within_pool_tick_corr": round(float(np.mean(within_co)), 3) if within_co else None,
-        "cross_pool_tick_corr": round(float(np.mean(cross_co)), 3) if cross_co else None,
-        "emergent_active_fraction": round(float(np.mean(active_frac)), 3),
+        "recovery_acc": [round(float(np.mean(accs)), 6), round(float(np.std(accs)), 6)],
+        "within_pool_tick_corr": round(float(np.mean(within_co)), 6) if within_co else None,
+        "cross_pool_tick_corr": round(float(np.mean(cross_co)), 6) if cross_co else None,
+        "emergent_active_fraction": round(float(np.mean(active_frac)), 6),
     }
 
 
 def main():
-    K = 2; out = {"n_seeds": SEEDS, "K": K, "chance": round(1.0 / K, 3), "by_battery_duration": []}
+    K = 2; out = {"n_seeds": SEEDS, "K": K, "chance": round(1.0 / K, 6), "by_battery_duration": []}
     print("== (C) emergent AGC disaggregation (SoC-equalizing split; per-DER cadence is EMERGENT, not hand-set) ==")
     print("   battery-duration robustness check (homogeneous members):")
     print(f"   {'e_cap(h)':>8} {'within-corr':>11} {'cross-corr':>11} {'active-frac':>11} {'recovery(chance 0.50)':>22}")

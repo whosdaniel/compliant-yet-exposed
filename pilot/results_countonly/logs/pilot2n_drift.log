@@ -1,0 +1,21 @@
+== stationary ==
+  W=  8: acc=0.475 ari=0.108 f1=0.273 sig=0.54
+  W= 16: acc=0.510 ari=0.161 f1=0.315 sig=0.76
+  W= 32: acc=0.607 ari=0.303 f1=0.430 sig=0.96
+  W= 64: acc=0.756 ari=0.511 f1=0.600 sig=1.00
+  W=128: acc=0.925 ari=0.829 f1=0.860 sig=1.00
+== param_drift ==
+  W=  8: acc=0.491 ari=0.132 f1=0.293 sig=0.52
+  W= 16: acc=0.537 ari=0.198 f1=0.345 sig=0.74
+  W= 32: acc=0.651 ari=0.377 f1=0.491 sig=0.88
+  W= 64: acc=0.781 ari=0.559 f1=0.639 sig=0.98
+  W=128: acc=0.913 ari=0.799 f1=0.836 sig=1.00
+== churn ==
+  W=  8: acc=0.441 ari=0.082 f1=0.251 sig=0.38
+  W= 16: acc=0.493 ari=0.139 f1=0.297 sig=0.62
+  W= 32: acc=0.490 ari=0.140 f1=0.300 sig=0.62
+  W= 64: acc=0.487 ari=0.124 f1=0.285 sig=0.56
+  W=128: acc=0.451 ari=0.075 f1=0.245 sig=0.26
+
+saved -> <repo>/pilot/results_countonly/pilot2n_drift.json
+-> stationary rising = sample-complexity; if drift/churn plateaus, that is the real horizon.

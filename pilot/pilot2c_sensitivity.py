@@ -20,7 +20,11 @@ from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.optimize import linear_sum_assignment
 from pilot2i_metrics import ari as _ari   # chance-corrected metric (primary)
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+from pilot2_command_channel import FEATURES  # amendment 1 feature switch
+NORM = os.environ.get("CYE_BG_NORM", "window")   # "window" (published) or "der" (post hoc check)
+if NORM not in ("window", "der"):
+    raise SystemExit(f"CYE_BG_NORM must be window or der, not {NORM!r}")
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 LAM_ACT, LAM_IDLE = 900.0, 120.0
 SZ_ACT, SZ_ACT_SD = 34.0, 4.0
 SZ_IDLE, SZ_IDLE_SD = 300.0, 60.0
@@ -48,7 +52,11 @@ def trial(phi, M=24, K=3, W=24, p=0.5, seed=0):
     bg_siz = np.where(bg_active, SZ_ACT, SZ_IDLE) + rng.normal(0, 40, (M, W))
     obs_cnt = (1 - phi) * cnt + phi * bg_cnt                       # blend signal with uncorrelated background
     obs_siz = (1 - phi) * siz + phi * bg_siz
-    F = np.hstack([obs_cnt, obs_siz]); F = (F - F.mean(0)) / (F.std(0) + 1e-9)
+    F = obs_cnt if FEATURES == "count" else np.hstack([obs_cnt, obs_siz])
+    if NORM == "window":   # as published: each window standardized across DERs
+        F = (F - F.mean(0)) / (F.std(0) + 1e-9)
+    else:                  # post hoc check (revision R1): each DER standardized across windows, as in the other experiments
+        F = (F - F.mean(1, keepdims=True)) / (F.std(1, keepdims=True) + 1e-9)
     pred = fcluster(linkage(F, method="ward"), t=K, criterion="maxclust") - 1
     return accuracy(pools, pred, K), _ari(pools, pred)
 
@@ -60,14 +68,15 @@ def main():
     for ph in phis:
         res = [trial(ph, seed=s) for s in range(seeds)]
         accs = [r[0] for r in res]; aris = [r[1] for r in res]
-        out.append([ph, round(float(np.mean(accs)), 3), round(float(np.std(accs)), 3),
-                    round(float(np.mean(aris)), 3), round(float(np.std(aris)), 3)])
+        out.append([ph, round(float(np.mean(accs)), 6), round(float(np.std(accs)), 6),
+                    round(float(np.mean(aris)), 6), round(float(np.std(aris)), 6)])
         print(f"{ph:>17.2f} {np.mean(accs):>7.3f} {np.mean(aris):>7.3f}")
-    json.dump(out, open(os.path.join(RES, "pilot2c_sensitivity.json"), "w"), indent=2)
+    OUT = "pilot2c_sensitivity.json" if NORM == "window" else "pilot2c_sensitivity_perder.json"
+    json.dump(out, open(os.path.join(RES, OUT), "w"), indent=2)
     print("\nchance: acc empirical floor (K=3) ~0.47; ARI null ~0")
     print("-> co-membership recovery degrades gracefully as background contamination grows;")
     print("   the clean (beta=0) model is an upper bound, as stated honestly in the paper.")
-    print(f"saved -> {RES}/pilot2c_sensitivity.json")
+    print(f"saved -> {RES}/{OUT}")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,14 @@
+runs 10440; favorable W>=24: min oracle 1.0000, min silK 1.0000 over 186 cells
+adverse M=49152 K= 2: W96 oracle 0.997 silK 0.997 | W24 oracle 0.675 silK 0.675
+adverse M=49152 K= 4: W96 oracle 0.992 silK 0.992 | W24 oracle 0.639 silK 0.421
+adverse M=49152 K= 8: W96 oracle 0.980 silK 0.980 | W24 oracle 0.475 silK 0.304
+adverse M=49152 K=16: W96 oracle 0.950 silK 0.954 | W24 oracle 0.308 silK 0.090
+adverse M=49152 K=32: W96 oracle 0.897 silK 0.916 | W24 oracle 0.182 silK 0.016
+adverse M=49152 K=64: W96 oracle 0.785 silK 0.860 | W24 oracle 0.101 silK 0.005
+cost: t_tree slope 2.1, rss slope (top two) 1.95; next doubling 98304 needs 77.3 GB for the two distance arrays alone
+   {'M': 12288, 'runs': 600, 'concurrent_workers': 16, 't_tree_median_s': 3.476, 't_tree_min_s': 1.953, 't_tree_max_s': 7.916, 't_sel_median_s': 9.223, 'peak_rss_gb': 1.733, 'two_condensed_copies_gb': 1.208}
+   {'M': 24576, 'runs': 120, 'concurrent_workers': 4, 't_tree_median_s': 10.122, 't_tree_min_s': 7.302, 't_tree_max_s': 14.591, 't_sel_median_s': 7.071, 'peak_rss_gb': 5.565, 'two_condensed_copies_gb': 4.832}
+   {'M': 49152, 'runs': 120, 'concurrent_workers': 1, 't_tree_median_s': 36.963, 't_tree_min_s': 26.552, 't_tree_max_s': 48.39, 't_sel_median_s': 6.469, 'peak_rss_gb': 21.445, 'two_condensed_copies_gb': 19.327}
+unknown K, favorable: 294 cells, within 0.02: 282, silK < oracle-0.05: 1, silK > oracle+0.02: 6, gap range [-0.07, 0.024]
+unknown K, adverse: 294 cells, within 0.02: 136, silK < oracle-0.05: 107, silK > oracle+0.02: 24, gap range [-0.444, 0.154]
+saved -> <repo>/pilot/results_countonly/pilot2t_scale_analysis.json

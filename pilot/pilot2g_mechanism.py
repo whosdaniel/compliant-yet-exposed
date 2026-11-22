@@ -29,7 +29,8 @@ from pilot2_command_channel import (
     LAM_ACT, LAM_IDLE, SZ_ACT, SZ_ACT_SD, SZ_IDLE, SZ_IDLE_SD, SEEDS, _z, accuracy, ci95,
 )
 
-RES = os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
+from pilot2_command_channel import observed_features  # amendment 1a: part (A) uses the observer feature switch
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results"); os.makedirs(RES, exist_ok=True)
 
 
 def cluster_feat(feat, K):
@@ -60,25 +61,25 @@ def run_arm(builder, K=2):
     for s in range(SEEDS):
         feat, pools = builder(s, K)
         accs.append(accuracy(pools, cluster_feat(feat, K), K))
-    return round(float(np.mean(accs)), 3), round(float(np.std(accs)), 3)
+    return round(float(np.mean(accs)), 6), round(float(np.std(accs)), 6)
 
 
 def main():
-    K = 2; out = {"n_seeds": SEEDS, "chance": round(1.0 / K, 3)}
+    K = 2; out = {"n_seeds": SEEDS, "chance": round(1.0 / K, 6)}
 
     # ---- (A) temporal-shuffle ----
     def b_real(s, K):
-        c, z, p = gen_raw(seed=s, K=K); return np.hstack([_z(c), _z(z)]), p
+        c, z, p = gen_raw(seed=s, K=K); return observed_features(_z(c), _z(z)), p
 
     def b_samefrac(s, K):
-        c, z, p = gen_raw(seed=s, K=K, same_fraction=True); return np.hstack([_z(c), _z(z)]), p
+        c, z, p = gen_raw(seed=s, K=K, same_fraction=True); return observed_features(_z(c), _z(z)), p
 
     def b_shuffle(s, K):
         c, z, p = gen_raw(seed=s, K=K)
         rng = np.random.default_rng(10_000 + s)
         for i in range(c.shape[0]):                              # per-DER window permutation (same for count&size)
             perm = rng.permutation(c.shape[1]); c[i] = c[i][perm]; z[i] = z[i][perm]
-        return np.hstack([_z(c), _z(z)]), p
+        return observed_features(_z(c), _z(z)), p
 
     out["temporal_shuffle"] = {
         "real": dict(zip(("acc", "sd"), run_arm(b_real))),

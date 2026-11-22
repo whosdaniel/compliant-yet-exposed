@@ -19,7 +19,7 @@ from scipy.stats import norm
 from pilot2_command_channel import _z, cluster, accuracy, SEEDS
 from pilot2i_metrics import analyze
 
-RES = os.path.join(os.path.dirname(__file__), "results")
+RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "results")
 
 CMD_ACT, CMD_IDLE = 900.0, 30.0    # downlink setpoints: many when awarded (~4s), ~none idle
 TEL_ACT, TEL_IDLE = 900.0, 120.0   # uplink telemetry: 4s during award (CAISO), 30s baseline otherwise

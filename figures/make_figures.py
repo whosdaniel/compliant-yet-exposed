@@ -1,4 +1,5 @@
-"""make_figures.py — result figures (data from pilot/results/*.json).
+"""make_figures.py — result figures (data from pilot/results_countonly/*.json, the downlink observer used in the paper,
+or the directory in CYE_RESULTS; Fig. 4 always reads the TLS measurements in pilot/results).
 Achromatic / journal palette (no hue), larger fonts, no label/legend overlaps.
 All numbers are actual pilot outputs; nothing here is hand-set beyond labels."""
 import os, json, matplotlib
@@ -7,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 
 FIGS = os.path.join(os.path.dirname(__file__), "figs"); os.makedirs(FIGS, exist_ok=True)
-PILOT_RES = os.path.join(os.path.dirname(__file__), "..", "pilot", "results")
+PILOT_RES = os.environ.get("CYE_RESULTS") or os.path.join(os.path.dirname(__file__), "..", "pilot", "results_countonly")
 def _load(name): return json.load(open(os.path.join(PILOT_RES, name)))
 P2 = _load("pilot2_results.json")
 CORR = _load("pilot2b_correlation.json")
@@ -19,8 +20,15 @@ plt.rcParams.update({
     "font.family": "serif", "font.size": 10, "axes.linewidth": 0.9,
     "axes.labelsize": 10.5, "xtick.labelsize": 9, "ytick.labelsize": 9, "legend.fontsize": 8.5,
     "axes.spines.top": False, "axes.spines.right": False, "axes.edgecolor": "#3a3f45",
-    "figure.dpi": 300, "savefig.dpi": 300, "savefig.bbox": "tight", "savefig.pad_inches": 0.12,
+    "figure.dpi": 600, "savefig.dpi": 600, "savefig.bbox": "tight", "savefig.pad_inches": 0.12,
+    "pdf.fonttype": 42,                      # embed TrueType fonts in the vector PDFs
 })
+
+def save(fig, name):
+    """PNG for the manuscript build, vector PDF for the separate figure files of the submission."""
+    for ext in ("png", "pdf"):
+        fig.savefig(os.path.join(FIGS, f"{name}.{ext}"))
+    plt.close(fig)
 # ---- achromatic / journal palette (no hue) ----
 INK  = "#1a1a1a"   # primary / real / headline
 G_DK = "#555555"   # secondary series
@@ -57,7 +65,7 @@ def fig_e2():
     ax.axhline(0.0, ls=(0, (5, 3)), lw=0.9, color=NULLG, zorder=1)  # null=0; the "expect ~0" note above already labels it
     ax.set_ylim(-0.1, 1.2); ax.set_ylabel("co-membership ARI")
     ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0])               # ARI maxes at 1.0 -- no tick above it
-    fig.savefig(os.path.join(FIGS, "fig_e2_comembership.png")); plt.close(fig)
+    save(fig, "fig_e2_comembership")
 
 # ---- Fig 8: award-correlation boundary (§8.4) ----
 def fig_corr():
@@ -75,7 +83,7 @@ def fig_corr():
     ax.set_ylabel("co-membership ARI")
     ax.legend(loc="lower left", frameon=False, title="observed\nwindows", title_fontsize=8.5,
               handlelength=2.2, borderaxespad=0.4)
-    fig.savefig(os.path.join(FIGS, "fig_correlation_boundary.png")); plt.close(fig)
+    save(fig, "fig_correlation_boundary")
 
 # ---- Fig 10: within-pool synchronization gamma ----
 def fig_within_pool():
@@ -90,10 +98,10 @@ def fig_within_pool():
                 markerfacecolor=col, markeredgecolor="white", markeredgewidth=0.6)
     null_line(ax, x=0.5)
     ax.set_xlim(0, 1.05); ax.set_ylim(-0.05, 1.08)
-    ax.set_xlabel("within-pool schedule homogeneity  $\\gamma$")
+    ax.set_xlabel("within-pool synchronization  $\\gamma$")
     ax.set_ylabel("co-membership ARI")
     ax.legend(loc="lower right", frameon=False, handlelength=2.2)
-    fig.savefig(os.path.join(FIGS, "fig_within_pool.png")); plt.close(fig)
+    save(fig, "fig_within_pool")
 
 # ---- Fig 7: attacker cost (E4) ----
 def fig_e4():
@@ -103,15 +111,14 @@ def fig_e4():
     fig, ax = plt.subplots(figsize=(4.2, 3.0))
     ax.errorbar(W, acc, yerr=[err, up], fmt="-o", color=INK, ms=5, lw=1.6, capsize=3.5,
                 ecolor=INK, markerfacecolor=INK, markeredgecolor="white", markeredgewidth=0.7, zorder=3)
-    ax.axhline(0.9, ls=(0, (1, 2)), lw=1.0, color=G_MD, zorder=1)
-    ax.text(34, 0.905, "0.9", color=G_MD, fontsize=8.5, ha="right", va="bottom")
-    ax.axhline(0.59, ls=(0, (5, 3)), lw=1.0, color=NULLG, zorder=1)
-    ax.text(32, 0.605, "empirical floor (K = 2)", color="#6b7480", fontsize=8.5, ha="right", va="bottom")
+    floor = P2["E6_negative_control_nopools"]["acc"]          # E6 no-structure accuracy at K = 2
+    ax.axhline(floor, ls=(0, (5, 3)), lw=1.0, color=NULLG, zorder=1)
+    ax.text(32, floor + 0.015, "empirical floor (K = 2)", color="#6b7480", fontsize=8.5, ha="right", va="bottom")
     ax.set_xscale("log", base=2); ax.set_xticks(W); ax.set_xticklabels(W)
-    ax.set_xlabel("observed award windows  $W$"); ax.set_ylabel("co-membership accuracy")
+    ax.set_xlabel("observed windows  $W$"); ax.set_ylabel("co-membership accuracy")
     ax.set_ylim(0.4, 1.04)                                  # accuracy maxes at 1.0; upper error bar clipped at the ceiling
     ax.set_yticks([0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0])     # accuracy maxes at 1.0 -- no misleading tick above it
-    fig.savefig(os.path.join(FIGS, "fig_attacker_cost.png")); plt.close(fig)
+    save(fig, "fig_attacker_cost")
 
 # ---- (legacy, unused in doc) which defense closes the channel ----
 def fig_e3():
@@ -131,41 +138,59 @@ def fig_e3():
     ax.axhline(0.0, ls=(0, (5, 3)), lw=0.9, color=NULLG, zorder=1)
     ax.text(-0.46, 0.03, NULLLAB, color="#6b7480", fontsize=8, ha="left", va="bottom")
     ax.set_ylim(-0.1, 1.36); ax.set_ylabel("attack ARI at strongest setting\n(lower = channel closed)")
-    fig.savefig(os.path.join(FIGS, "fig_defenses.png")); plt.close(fig)
+    save(fig, "fig_defenses")
 
-# ---- Fig 4: idle vs active traffic, real TLS wire bytes ----
+# ---- Fig 4: idle vs active traffic from the TLS measurements (observer-independent, so always read from pilot/results) ----
+MEAS_RES = os.path.join(os.path.dirname(__file__), "..", "pilot", "results")
 def fig_traffic():
-    fig, axes = plt.subplots(1, 2, figsize=(5.0, 2.8))
-    for ax, (title, idle, active) in zip(
-        axes, [("messages / min", 2, 15), ("mean wire bytes / message", 300, 34)]):
-        bars = ax.bar(["idle", "active\nregulation"], [idle, active], color=[G_LT, INK], width=0.6,
-                      zorder=3, edgecolor=INK, linewidth=0.7)
-        for b, v in zip(bars, [idle, active]):
-            ax.text(b.get_x() + b.get_width() / 2, v, f"{v:,}", ha="center", va="bottom", fontsize=9)
-        ax.set_title(title, fontsize=9.5); ax.margins(y=0.18)
-    fig.savefig(os.path.join(FIGS, "fig_traffic_shape.png")); plt.close(fig)
+    tls = json.load(open(os.path.join(MEAS_RES, "real_tls_measure.json")))       # composed minute, real record sizes
+    cap = json.load(open(os.path.join(MEAS_RES, "real_socket_capture.json")))    # loopback capture, per phase
+    comp = [tls["idle_minute"], tls["active_minute"]]
+    capp = [cap["idle_phase"], cap["active_phase"]]
+    per_min = [m["msgs"] for m in comp]
+    mean_comp = [m["bytes"] / m["msgs"] for m in comp]
+    mean_cap = [m["wire_bytes"] / m["msgs"] for m in capp]
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(5.4, 2.9), gridspec_kw=dict(width_ratios=[1, 1.45], wspace=0.42))
+    x = [0, 1]; xl = ["idle", "active\nregulation"]
+    bars = a1.bar(x, per_min, width=0.55, color=G_DK, edgecolor=INK, linewidth=0.7, zorder=3)
+    for b_, v in zip(bars, per_min):
+        a1.text(b_.get_x() + b_.get_width() / 2, v + 0.6, f"{v}", ha="center", va="bottom", fontsize=9)
+    a1.set_xticks(x); a1.set_xticklabels(xl); a1.set_ylim(0, 38)
+    a1.set_title("(a) TLS records per minute", fontsize=9.5)
+    w = 0.36
+    b1 = a2.bar([i - w / 2 for i in x], mean_comp, width=w, color=G_DK, edgecolor=INK, linewidth=0.7, zorder=3,
+                label="composed minute")
+    b2 = a2.bar([i + w / 2 for i in x], mean_cap, width=w, color=G_LT, edgecolor=INK, linewidth=0.7, zorder=3,
+                label="loopback capture")
+    for bb, vals in ((b1, mean_comp), (b2, mean_cap)):
+        for b_, v in zip(bb, vals):
+            a2.text(b_.get_x() + b_.get_width() / 2, v + 4, f"{v:.0f}", ha="center", va="bottom", fontsize=8.5)
+    a2.set_xticks(x); a2.set_xticklabels(xl); a2.set_ylim(0, 300)
+    a2.set_title("(b) mean bytes per TLS record", fontsize=9.5)
+    a2.legend(loc="upper left", frameon=False, fontsize=8, handlelength=1.4, borderaxespad=0.2)
+    save(fig, "fig_traffic_shape")
 
-# ---- Fig 9: sensitivity to background contamination phi ----
+# ---- Fig 11: sensitivity to background contamination phi (as run + post hoc per-DER standardization) ----
 def fig_sensitivity():
-    p = os.path.join(PILOT_RES, "pilot2c_sensitivity.json")
-    data = json.load(open(p))
-    phi = [d[0] for d in data]; ari = [d[3] for d in data]; std = [d[4] for d in data]
+    runs = [("pilot2c_sensitivity.json", "as run (each window\nstandardized across DERs)", "-o", INK, 1.6),
+            ("pilot2c_sensitivity_perder.json", "check (each DER\nstandardized across windows)", "--s", G_MD, 1.4)]
     fig, ax = plt.subplots(figsize=(4.2, 3.1))
-    ax.axvspan(0.0, 0.5, color=SHADEG, zorder=0)
-    ax.text(0.25, 0.42, "robust\nregion", ha="center", va="center", fontsize=8.5, color="#5a6470",
-            style="italic")
-    lo = [a - s for a, s in zip(ari, std)]
-    hi = [min(a + s, 1.0) for a, s in zip(ari, std)]   # clip the +1 SD band at the ARI ceiling (1.0); no seed exceeds it
-    ax.fill_between(phi, lo, hi, color=G_MD, alpha=0.18, zorder=2)
-    ax.plot(phi, ari, "-o", color=INK, ms=5, lw=1.6, markerfacecolor=INK,
-            markeredgecolor="white", markeredgewidth=0.7, zorder=3)
+    for fname, lab, fmt, col, lw in runs:
+        data = json.load(open(os.path.join(PILOT_RES, fname)))
+        phi = [d[0] for d in data]; ari = [d[3] for d in data]; std = [d[4] for d in data]
+        lo = [a - s_ for a, s_ in zip(ari, std)]
+        hi = [min(a + s_, 1.0) for a, s_ in zip(ari, std)]   # clip the +1 SD band at the ARI ceiling (1.0)
+        ax.fill_between(phi, lo, hi, color=col, alpha=0.14, zorder=2, lw=0)
+        ax.plot(phi, ari, fmt, color=col, ms=4.5, lw=lw, label=lab, markerfacecolor=col,
+                markeredgecolor="white", markeredgewidth=0.6, zorder=3)
     ax.axhline(0.0, ls=(0, (5, 3)), lw=0.9, color=NULLG, zorder=1)
     ax.text(0.02, 0.03, NULLLAB, color="#6b7480", fontsize=8, ha="left", va="bottom")
     ax.set_xlim(0, 0.9); ax.set_ylim(-0.05, 1.04)
     ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0])           # ARI maxes at 1.0
     ax.set_xlabel("background contamination  $\\varphi$")
     ax.set_ylabel("co-membership ARI")
-    fig.savefig(os.path.join(FIGS, "fig_sensitivity.png")); plt.close(fig)
+    ax.legend(loc="lower left", bbox_to_anchor=(0.0, 0.12), frameon=False, fontsize=7.5, handlelength=2.2)
+    save(fig, "fig_sensitivity")
 
 # ---- Fig 11: patient-observer realizability ----
 def fig_drift():
@@ -181,11 +206,11 @@ def fig_drift():
                 markerfacecolor=col, markeredgecolor="white", markeredgewidth=0.6)
     ax.axhline(0.0, ls=(0, (5, 3)), lw=0.9, color=NULLG, zorder=1)
     ax.set_xscale("log", base=2); ax.set_xticks([8, 16, 32, 64, 128]); ax.set_xticklabels([8, 16, 32, 64, 128])
-    ax.set_xlabel("observed award windows  $W$")
+    ax.set_xlabel("observed windows  $W$")
     ax.set_ylabel("co-membership ARI")
     ax.set_ylim(-0.05, 0.95)
     ax.legend(loc="upper left", frameon=False, handlelength=2.2)
-    fig.savefig(os.path.join(FIGS, "fig_drift.png")); plt.close(fig)
+    save(fig, "fig_drift")
 
 
 for f in (fig_e2, fig_corr, fig_within_pool, fig_e4, fig_e3, fig_traffic, fig_sensitivity, fig_drift):

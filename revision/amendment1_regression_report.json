@@ -1,0 +1,162 @@
+{
+  "features": "count+size (default)",
+  "scratch": "<scratch>/regress_countsize",
+  "scripts": {
+    "pilot2_command_channel.py": {
+      "rc": 0,
+      "seconds": 0.5,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2b_correlation.py": {
+      "rc": 0,
+      "seconds": 0.6,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2c_sensitivity.py": {
+      "rc": 0,
+      "seconds": 0.6,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2d_within_pool.py": {
+      "rc": 0,
+      "seconds": 0.3,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2e_boundary.py": {
+      "rc": 0,
+      "seconds": 1.1,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2f_nuisance.py": {
+      "rc": 0,
+      "seconds": 0.5,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2h_disaggregation.py": {
+      "rc": 0,
+      "seconds": 0.9,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2i_metrics.py": {
+      "rc": 0,
+      "seconds": 4.4,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2j_wsweep.py": {
+      "rc": 0,
+      "seconds": 4.2,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2k_ari_curves.py": {
+      "rc": 0,
+      "seconds": 6.1,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2m_psweep.py": {
+      "rc": 0,
+      "seconds": 5.7,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2n_drift.py": {
+      "rc": 0,
+      "seconds": 10.3,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2o_fig_ari.py": {
+      "rc": 0,
+      "seconds": 0.7,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2r_unknown_k.py": {
+      "rc": 0,
+      "seconds": 6.5,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    },
+    "pilot2t_scale_analysis.py": {
+      "rc": 0,
+      "seconds": 1.7,
+      "timing_or_memory_diffs": 0,
+      "timing_or_memory_paths": [],
+      "result_diffs": [],
+      "n_result_diffs": 0,
+      "verdict": "MATCH"
+    }
+  },
+  "e8_sample": {
+    "rc": 0,
+    "seconds": 15.1,
+    "output": [
+      "lines=10440 expected_tasks=10440 unique=10440 dups=0 missing=0 extra=0",
+      "M=  192 K= 2 W=24 adverse   seed= 3 stored=(0.72818,0.72818,2) rerun=(0.72818,0.72818,2) OK",
+      "M=   48 K= 4 W= 6 favorable seed=18 stored=(0.65564,0.70064,3) rerun=(0.65564,0.70064,3) OK",
+      "M=   96 K=16 W=48 favorable seed= 2 stored=(1.0,1.0,16) rerun=(1.0,1.0,16) OK",
+      "M=  192 K=16 W=48 favorable seed= 3 stored=(1.0,1.0,16) rerun=(1.0,1.0,16) OK",
+      "M=  192 K=16 W=12 adverse   seed=15 stored=(0.13293,0.05514,89) rerun=(0.13293,0.05514,89) OK",
+      "M= 1536 K=16 W=24 favorable seed=10 stored=(1.0,1.0,16) rerun=(1.0,1.0,16) OK",
+      "M=   96 K= 4 W=12 favorable seed=16 stored=(1.0,1.0,4) rerun=(1.0,1.0,4) OK",
+      "M=  384 K= 2 W=48 favorable seed= 6 stored=(1.0,1.0,2) rerun=(1.0,1.0,2) OK",
+      "M=   24 K= 8 W= 6 adverse   seed= 1 stored=(0.37371,0.29029,12) rerun=(0.37371,0.29029,12) OK",
+      "M=   24 K= 8 W=12 favorable seed=17 stored=(1.0,0.82443,7) rerun=(1.0,0.82443,7) OK",
+      "M=12288 K=64 W= 6 adverse   seed= 2 stored=(0.04883,0.04883,69) rerun=(0.04883,0.04883,69) OK",
+      "M=12288 K=32 W=12 adverse   seed= 6 stored=(0.0692,0.05741,96) rerun=(0.0692,0.05741,96) OK",
+      "determinism: ALL MATCH"
+    ]
+  },
+  "overall": "PASS"
+}
